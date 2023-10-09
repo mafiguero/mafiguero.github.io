@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Mafiguero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        if (window.innerWidth <= 768) {
+            window.location.href = "mobile.html";
+        }
+        
+        function cambiarImagenInicio(accion) {
+            var imagen = document.getElementById("miImagenInicio");
+            if (accion === 'entrar') { imagen.src = "assets/inicio1.PNG"; } 
+            else { imagen.src = "assets/inicio2.PNG"; }
+        }
+        function cambiarImagenAbout(accion) {
+            var imagen = document.getElementById("miImagenAbout");
+            if (accion === 'entrar') { imagen.src = "assets/about1.PNG"; } 
+            else { imagen.src = "assets/about2.PNG"; }
+        }
+        function cambiarImagenCarrera(accion) {
+            var imagen = document.getElementById("miImagenCarrera");
+            if (accion === 'entrar') { imagen.src = "assets/carrera1.PNG"; } 
+            else { imagen.src = "assets/carrera2.PNG"; }
+        }
+        function cambiarImagenProyectos(accion) {
+            var imagen = document.getElementById("miImagenProyectos");
+            if (accion === 'entrar') { imagen.src = "assets/proyectos1.PNG"; } 
+            else { imagen.src = "assets/proyectos2.PNG"; }
+        }
+        function cambiarImagenContacto(accion) {
+            var imagen = document.getElementById("miImagenContacto");
+            if (accion === 'entrar') { imagen.src = "assets/contacto1.PNG"; } 
+            else { imagen.src = "assets/contacto2.PNG"; }
+        }
+
+        function cambiarImagenP1(accion) {
+            var imagen = document.getElementById("miImagen1");
+            if (accion === 'entrar') { imagen.src = "assets/p1.3.PNG"; } 
+            else { imagen.src = "assets/p1.4.PNG"; }
+        }
+        function cambiarImagenP2(accion) {
+            var imagen = document.getElementById("miImagen2");
+            if (accion === 'entrar') { imagen.src = "assets/p1.3.PNG"; } 
+            else { imagen.src = "assets/p1.4.PNG"; }
+        }
+
+        function redirectToLink(link) {
+            window.location.href = link;
+        }
+    </script>
+    
+    <style>
+        .texto-con-espaciado {
+            line-height: 1.8;
+        }
+        .centrado {
+            text-align: center;
+        }
+        .derecha {
+            text-align: right;
+        }
+        .izquierda {
+            text-align: left;
+        }
+        body {
+            background-color: #1E1B1E;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+            font-size: auto;
+            color: white;
+        }
+        .contenedor-imagenes {
+            display: flex;
+            justify-content: space-around;
+        }
+        .imagen {
+            width: 500px;
+            height: auto;
+        }
+        .imagen-redondeada {
+            border-radius: 10px;
+        }
+        .cambiar-cursor {
+            cursor: pointer;
+        }
+        .imagen-con-texto {
+            position: relative;
+        }
+        .imagen-con-texto img {
+            display: block;
+            margin: 0 auto;
+            float: leftt; /* Coloca la imagen a la derecha */
+            width: 100%;
+            height: auto;
+        }
+        .texto-superpuesto {
+            position: absolute;
+            top: 15%;
+            left: 35%;
+            transform: translate(-50%, 100%);
+            background-color: rgba(185, 30, 30, 0); /* Fondo semi-transparente para el texto */
+            color: white; /* Color del texto */
+            padding: 10px; /* Espacio alrededor del texto */
+        }
+        .levitacion {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto; /* Ajusta el margen según sea necesario */
+            position: relative;
+            animation: levitar 2s infinite alternate; /* Animación de levitación */
+        }
+        .levitacion::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Efecto de sombra */
+            z-index: -1; /* Detrás de la imagen */
+        }
+        @keyframes levitar {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px); /* Ajusta la distancia de levitación */
+            }
+        }
+        .imagen-con-sombra {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto; /* Ajusta el margen según sea necesario */
+            background-image: url('ruta-de-tu-imagen.jpg'); /* Reemplaza con la ruta de tu imagen */
+            background-size: cover;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5); /* Efecto de sombra */
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .image-right {
+            flex: 1;
+            text-align: center;
+            margin-left: -30px;
+        }
+        .image-left {
+            flex: 1;
+            text-align: center;
+            margin-right: 30px;
+        }
+        .text-block-left {
+            flex: 1;
+            padding: 20px;
+            margin-right: -50px;
+        }
+        .text-block-rigth {
+            flex: 1;
+            padding: 20px;
+            margin-left: -300px;
+        }
+
+        .contenedor-bloques {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            max-width: auto;
+            padding: auto;
+        }
+        .bloque-right {
+            margin-left: 250px;
+        }
+        .bloque-left {
+            margin-right: 250px;
+        }
+
+    </style>
+</head>
+<body>    
+    <br><br><div class="derecha" class="contenedor-imagenes">
+        
+        <img id="miImagenInicio" 
+            src="assets/inicio2.png" 
+            alt="Imagen Inicio" 
+            onmouseover="cambiarImagenInicio('entrar')"
+            onmouseout="cambiarImagenInicio('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 25px;"
+            onclick="redirectToLink('#inicio')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenAbout" 
+            src="assets/about2.png" 
+            alt="Imagen About" 
+            onmouseover="cambiarImagenAbout('entrar')"
+            onmouseout="cambiarImagenAbout('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 25px;"
+            onclick="redirectToLink('#about')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenCarrera" 
+            src="assets/carrera2.png" 
+            alt="Imagen About" 
+            onmouseover="cambiarImagenCarrera('entrar')"
+            onmouseout="cambiarImagenCarrera('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 25px;"
+            onclick="redirectToLink('#carrera')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenProyectos" 
+            src="assets/proyectos2.png" 
+            alt="Imagen Proyectos" 
+            onmouseover="cambiarImagenProyectos('entrar')"
+            onmouseout="cambiarImagenProyectos('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 25px;"
+            onclick="redirectToLink('#proyectos')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenContacto" 
+            src="assets/contacto2.png" 
+            alt="Imagen Contacto" 
+            onmouseover="cambiarImagenContacto('entrar')"
+            onmouseout="cambiarImagenContacto('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 25px;"
+            onclick="redirectToLink('#contacto')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div><br>
+
+
+    <br><br><br><br>
+    <div class="contenedor-bloques">
+        <div class="bloque-right">
+            <h3><b>──── &nbsp;&nbsp;&nbsp; Miguel Ángel Figuero</b></h3>
+            <h1><b>INGENIERO DE <br> COMPUTADORES</b></h1>
+            <p class="texto-con-espaciado">Soy MAF, estudiante de Ingeniería de Computadores en 
+                <br>la Escuela Técnica Superior de Ingenieros de Sistemas <br>informáticos de la Universidad Politécnica de Madrid
+            </p>
+        </div>
+        <div class="bloque-left">
+            <img src="assets/Background3.png" alt="Imagen derecha" width="500px"/>
+        </div>
+    </div>
+    <div class="contenedor-bloques">
+        <div class="bloque-right">
+            <br><br><br><br>
+            <img src="assets/perfil.png" alt="Imagen izquierda" width="500px"/>
+        </div>
+        <div class="bloque-left">
+            <h1><b>SOBRE MÍ</b></h1>
+            <p class="texto-con-espaciado">
+                Recuerdo que cuando era pequeño uno de los juguetes que más miedo le tenía era el cubo de Rubik, os preguntaréis por qué, 
+                pues porque era algo que no era capaz de resolver, me parecía algo imposible cuando intentaba armarlo. Un día dispuesto a 
+                enfrentarme a  mis miedos, lo saqué del cajón donde lo tenía escondido e intentar armar solamente una cara. Finalmente lo 
+                conseguí. Para mí fue todo un logro y desde ese momento paso a ser mi rompecabezas favorito. Descubrí que resolver el cubo 
+                del tirón es imposible, es necesario resolverlo por pasos, primero una cara, luego la primera capa, seguida de la segunda 
+                y así hasta completarlo.
+                Esto me ayudó a entender que no importa que tan difícil sea un problema siempre y cuando seas capaz de dividirlo en 
+                problemas más pequeños que puedas ir resolviendo poco a poco con constancia, esfuerzo y una buena planificación, de 
+                ahí uno de mis lemas favoritos: “Divide y vencerás”. Si hay algo que no eres capaz resolver es porque no te han dado 
+                las herramientas necesarias para lograrlo y con las que dispones no encuentras la manera de llevarlo a cabo.
+                <br><br>
+                Mi pasión por la informática surgió a raíz de mi primer portátil, un HP Compaq nc6000 del 2004 que iba a ser 
+                tirado a la basura. Gracias a ese ordenador me familiaricé con el entorno del sistema operativo (por entonces Windows XP), 
+                la BIOS, con el mundo de internet, algunos programas como Word, editores de música, de imagen, de video, etc. A los 14 
+                años me empecé a interesar por el hardware de un ordenador y empecé a desmontar portátiles y PCs de sobremesa, incluso 
+                llegué a montar mi primer pc por piezas. Cuando algo se rompía lo arreglaba, si se me rompían los cascos, los desmontaba 
+                les cambiaba el cable por uno nuevo y los volvía a soldar. Si se me rompía la pantalla del móvil, la cambiaba por una 
+                nueva, o si me fallaba un joystick del mando de la consola, lo reemplazaba. Desde siempre me ha gustado buscar solución 
+                a los problemas y no hay mayor satisfacción que llegar a la solucion haciendo bien las cosas.
+            </p>
+        </div>
+    </div>
+
+    <div class="centrado" class="contenedor-imagenes" id="proyectos">
+        <h1><b>MIS  PROYECTOS</b></h1>
+
+        <img id="miImagen1" 
+            src="assets/p1.4.PNG" 
+            alt="Imagen 1" 
+            onmouseover="cambiarImagenP1('entrar')"
+            onmouseout="cambiarImagenP1('salir')" 
+            title="Clic para ir a Google" 
+            style="width: 500px; height: 300px;"
+            onclick="redirectToLink('https://www.google.es')"
+            class="cambiar-cursor imagen-redondeada levitacion imagen-con-sombra" 
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagen2" 
+            src="assets/p1.4.PNG" 
+            alt="Imagen 2" 
+            onmouseover="cambiarImagenP2('entrar')" 
+            onmouseout="cambiarImagenP2('salir')" 
+            title="Clic para ir a Google" 
+            style="width: 500px; height: 300px;"
+            onclick="redirectToLink('https://www.google.es')"
+            class="cambiar-cursor imagen-redondeada levitacion imagen-con-sombra" 
+        />
+            
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div class="centrado" id="contacto">
+        <h1><b>CONTACTO</b></h1>
+    </div>
+
+</body>
+</html>

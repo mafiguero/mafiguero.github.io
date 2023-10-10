@@ -133,10 +133,10 @@
                 Ante la escasez de aplicaciones que realizaban esta función, los numerosos fallos que estás tenían y en muchos casos 
                 publicidad y pestañas emergentes con spam, me dispuse a programarlo por mí mismo desde cero.
                 <br><br>
-                Lo primero que tuve que ver es qué lenguaje utilizaría y qué herramientas disponía para llevarlo a cabo. Escogí lenguaje 
-                C porque es el que más domino y como no disponía de mucho tiempo para crear una interfaz gráfica, utilizaría la propia 
-                consola de Windows haciendo uso de algunas librerías que me ayudasen a cambiar el color del texto y del fondo 
-                para conseguir una mejor interfáz.
+                Primero, tenía que pensar qué lenguaje de programación iba a utilizar y qué herramientas disponía para llevarlo a cabo. 
+                Elegí C porque lo conozco bien, 
+                y como no tenía tiempo para hacer una interfaz gráfica profesional, decidí usar la consola de Windows y unas librerías para 
+                darle color y mejorar un poco el aspecto.
                 <br><br>
             </p>
         </div>
@@ -151,17 +151,16 @@
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
-                Primero busqué la manera de llevarlo a cabo y descubrí, trackeando archivos mientras iniciaba una nueva partida, 
-                que nada más empezar, el juego descargaba en mis archivos todos los avatares de los jugadores de la partida en una 
-                carpeta junto con el id de cada jugador. Con eso pude hacer mi primer tracker que periódicamente revisaba dicha 
-                carpeta en busca de nuevos archivos y cuando detectaba nuevos jugadores obtenía sus ids y los guardaba en un .txt 
+                Primero busqué la manera de llevarlo a cabo y me di cuenta con el "Track Folder Changes" de que el juego, en cuanto empezaba una 
+                partida, lanzaba los avatares de todos los jugadores y sus IDs en una carpeta. Con eso pude hacer mi primer programa que periódicamente 
+                revisaba dicha carpeta en busca de nuevos archivos y cuando detectaba nuevos jugadores obtenía sus ids y los guardaba en un .txt 
                 que posteriormente se imprimía por la consola de mi programa.
                 <br><br>
                 Mi siguiente paso consistía en planificar cómo proceder una vez tenía a mi disposición los ids de cada jugador detectado, 
                 con el objetivo de obtener sus respectivas estadísticas. Para ello, era necesario emplear un servicio de seguimiento 
                 específico para el videojuego, como "r6.tracker.network," y realizar una técnica de web scraping. Sin apenas conocimiento 
-                sobre web scrapping en c, decidí utilizar la herramienta wget para obtener la ficha .html del jugador que se quiere 
-                trackear y scrapear los datos que necesitaba de dicho fichero.
+                sobre web scraping en c, decidí utilizar la herramienta wget para obtener la ficha .html del jugador que se iba a trackear 
+                para posteriormente scrapear los datos que se iban a imprimir.
                 <br><br>
             </p>
         </div>
@@ -170,13 +169,13 @@
     <div class="contenedor-bloques" id="carrera">
         <div class="bloque-right">
             <p class="texto-con-espaciado">
-                Una vez disponía de todas las herramientas que necesitaba para hacer mi programa y de una planificación de cómo llevarlo a cabo 
-                me dispuse a programarlo. Creé una struct jugador que contenía todos los datos que se iban a scrappear y posteriormente imprimir. 
+                Una vez disponía de todas las herramientas que necesitaba para hacer mi programa y de una planificación de cómo llevarlo a cabo, 
+                me dispuse a programarlo. Creé una struct "jugador" que contenía todos los datos que se iban a scrappear y posteriormente imprimir. 
                 Implementé una función para obtener cada dato de un jugador así como todas las funciones para imprimir los datos. Estas 
                 funciones fueron sin duda las más complicadas de llevar a cabo. 
                 <br><br>
                 Finalmente agregué algunas funcionalidades más a mi programa como poder 
-                agregar amigos, o buscar estadísticas de un jugador en concreto escribiendo su Nick.
+                agregar amigos, o buscar estadísticas de un jugador en concreto escribiendo su Nick por teclado.
                 <br><br>
             </p>
         </div>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Mafiguero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script>
+        if (window.innerWidth <= 768) {
+            window.location.href = "mobile.html";
+        }
+        
+        function cambiarImagenInicio(accion) {
+            var imagen = document.getElementById("miImagenInicio");
+            if (accion === 'entrar') { imagen.src = "assets/inicio1.png"; } 
+            else { imagen.src = "assets/inicio2.png"; }
+        }
+        function cambiarImagenAbout(accion) {
+            var imagen = document.getElementById("miImagenAbout");
+            if (accion === 'entrar') { imagen.src = "assets/about1.png"; } 
+            else { imagen.src = "assets/about2.png"; }
+        }
+        function cambiarImagenCarrera(accion) {
+            var imagen = document.getElementById("miImagenCarrera");
+            if (accion === 'entrar') { imagen.src = "assets/carrera1.png"; } 
+            else { imagen.src = "assets/carrera2.png"; }
+        }
+        function cambiarImagenProyectos(accion) {
+            var imagen = document.getElementById("miImagenProyectos");
+            if (accion === 'entrar') { imagen.src = "assets/proyectos1.png"; } 
+            else { imagen.src = "assets/proyectos2.png"; }
+        }
+        function cambiarImagenContacto(accion) {
+            var imagen = document.getElementById("miImagenContacto");
+            if (accion === 'entrar') { imagen.src = "assets/contacto1.png"; } 
+            else { imagen.src = "assets/contacto2.png"; }
+        }
+
+        function cambiarImagenP1(accion) {
+            var imagen = document.getElementById("miImagen1");
+            if (accion === 'entrar') { imagen.src = "assets/p11.png"; } 
+            else { imagen.src = "assets/p12.png"; }
+        }
+        function cambiarImagenP2(accion) {
+            var imagen = document.getElementById("miImagen2");
+            if (accion === 'entrar') { imagen.src = "assets/p11.png"; } 
+            else { imagen.src = "assets/p12.png"; }
+        }
+
+        function redirectToLink(link) {
+            window.location.href = link;
+        }
+    </script>    
+</head>
+<body>    
+    <br><br><div class="derecha" class="contenedor-imagenes">
+        
+        <img id="miImagenInicio" 
+            src="assets/inicio2.png" 
+            alt="Imagen Inicio" 
+            onmouseover="cambiarImagenInicio('entrar')"
+            onmouseout="cambiarImagenInicio('salir')"              
+            style="height: 25px;"
+            onclick="redirectToLink('#inicio')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenAbout" 
+            src="assets/about2.png" 
+            alt="Imagen About" 
+            onmouseover="cambiarImagenAbout('entrar')"
+            onmouseout="cambiarImagenAbout('salir')"              
+            style="height: 25px;"
+            onclick="redirectToLink('#about')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenCarrera" 
+            src="assets/carrera2.png" 
+            alt="Imagen Carrera" 
+            onmouseover="cambiarImagenCarrera('entrar')"
+            onmouseout="cambiarImagenCarrera('salir')"              
+            style="height: 25px;"
+            onclick="redirectToLink('#carrera')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenProyectos" 
+            src="assets/proyectos2.png" 
+            alt="Imagen Proyectos" 
+            onmouseover="cambiarImagenProyectos('entrar')"
+            onmouseout="cambiarImagenProyectos('salir')"              
+            style="height: 25px;"
+            onclick="redirectToLink('#proyectos')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenContacto" 
+            src="assets/contacto2.png" 
+            alt="Imagen Contacto" 
+            onmouseover="cambiarImagenContacto('entrar')"
+            onmouseout="cambiarImagenContacto('salir')"              
+            style="height: 25px;"
+            onclick="redirectToLink('#contacto')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div><br>
+
+
+    <br><br><br><br>
+    <div class="contenedor-bloques">
+        <div class="bloque-right">
+            <h3><b>──── &nbsp;&nbsp;&nbsp; Miguel Ángel Figuero</b></h3>
+            <h1><b>INGENIERO DE <br> COMPUTADORES</b></h1>
+            <p class="texto-con-espaciado">Soy MAF, estudiante de Ingeniería de Computadores en 
+                <br>la Escuela Técnica Superior de Ingenieros de Sistemas <br>informáticos de la Universidad Politécnica de Madrid
+            </p>
+            <div class="recuadro">
+                <a href="CV.pdf" download>Descargar CV</a>
+              </div>
+        </div>
+        <div class="bloque-left">
+            <img src="assets/Background3.png" alt="Imagen derecha" width="500px"/>
+        </div>
+    </div>
+    <div class="contenedor-bloques">
+        <div class="bloque-right">
+            <br><br><br><br>
+            <img src="assets/perfil.png" alt="Imagen izquierda" width="400px"/>
+        </div>
+        <div class="bloque-left" id="about">
+            <h1><b>SOBRE MÍ</b></h1>
+            <p class="texto-con-espaciado">
+                Recuerdo que cuando era pequeño uno de los juguetes que más miedo le tenía era el cubo de Rubik, os preguntaréis por qué, 
+                pues porque era algo que no era capaz de resolver, me parecía algo imposible cuando intentaba armarlo. Un día lo saqué del 
+                cajón donde lo tenía escondido y traté de armar una cara. Finalmente lo 
+                conseguí. Para mí fue todo un logro y desde ese momento pasó a ser mi rompecabezas favorito. Descubrí que resolver el cubo 
+                del tirón es prácticamente imposible, es necesario resolverlo por pasos, primero una cara, luego la primera capa, seguida de la segunda 
+                y así hasta completarlo.
+                Esto me ayudó a entender que no importa que tan difícil sea un problema siempre y cuando seas capaz de dividirlo en 
+                problemas más pequeños que puedas ir resolviendo poco a poco con constancia, esfuerzo y una buena planificación, de 
+                ahí uno de mis lemas favoritos: “Divide y vencerás”. Si hay algo que no eres capaz resolver es porque no te han dado 
+                las herramientas necesarias para lograrlo y con las que dispones no encuentras la manera de llevarlo a cabo.
+                <br><br>
+                Mi pasión por la informática surgió a raíz de mi primer portátil, un HP Compaq nc6000 del 2004 que iba a ser 
+                tirado a la basura. Gracias a ese ordenador me familiaricé con el entorno del sistema operativo (por entonces Windows XP), 
+                la BIOS, con el mundo de internet, algunos programas como Word, editores de música, de imagen, de video, etc. A los 14 
+                años me empecé a interesar por el hardware de un ordenador y empecé a desmontar portátiles y PCs de sobremesa, incluso 
+                llegué a montar mi primer pc por piezas. Cuando algo se rompía lo arreglaba, si se me rompían los cascos, los desmontaba 
+                les cambiaba el cable por uno nuevo y los volvía a soldar. Si se me rompía la pantalla del móvil, la cambiaba por una 
+                nueva, o si me fallaba un joystick del mando de la consola, lo reemplazaba. Desde siempre me ha gustado buscar solución 
+                a los problemas y no hay mayor satisfacción que llegar a la solucion haciendo bien las cosas.
+            </p>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="contenedor-bloques" id="#carrera">
+        <div class="bloque-right">
+            <h1><b>MI CARRERA</b></h1>
+            <p class="texto-con-espaciado">
+                La Ingeniería de Computadores se origina en la disciplina de Ingeniería de Sistemas Informáticos y 
+                abarca una amplia gama de temas y conceptos vinculados a la informática, el software y el hardware.
+                <br><br>
+                Esta carrera engloba una diversidad de áreas, tales como ciberseguridad, redes, desarrollo de software 
+                de alta calidad y eficiencia, administración de bases de datos, sistemas inteligentes, y disciplinas 
+                relacionadas con los sistemas de computadores, entre otros. Estableciendo sólidos fundamentos en 
+                matemáticas, lógica, física, economía y aspectos éticos.
+            </p>
+        </div>
+        <div class="bloque-left">
+            <img class="imagen-redondeada imagen-con-sombra" src="assets/icc.jpg" alt="Imagen ICC" width="500px"/>
+        </div>
+    </div>
+    <div class="centrado">
+        <img src="assets/esquema.jpg" alt="Imagen Esquema" width="1000px"/>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="centrado" class="contenedor-imagenes" id="proyectos">
+        <h1><b>MIS  PROYECTOS</b></h1>
+
+        <img id="miImagen1" 
+            src="assets/p12.png" 
+            alt="Imagen 1" 
+            onmouseover="cambiarImagenP1('entrar')"
+            onmouseout="cambiarImagenP1('salir')"              
+            style="width: 500px; height: 300px;"
+            onclick="redirectToLink('https://www.google.es')"
+            class="cambiar-cursor imagen-redondeada levitacion imagen-con-sombra" 
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagen2" 
+            src="assets/p12.png" 
+            alt="Imagen 2" 
+            onmouseover="cambiarImagenP2('entrar')" 
+            onmouseout="cambiarImagenP2('salir')"              
+            style="width: 500px; height: 300px;"
+            onclick="redirectToLink('https://www.google.es')"
+            class="cambiar-cursor imagen-redondeada levitacion imagen-con-sombra" 
+        />
+            
+    </div>
+    <br><br>
+    <hr>
+
+    <div class="contenedor-bloques lighter-black-bg" id="contacto">
+        <br><br>
+        <div class="bloque-right">
+            <h1><b>CONTACTO</b></h1>
+            <h3><b>──── &nbsp;&nbsp;&nbsp; Miguel Ángel Figuero</b></h3>
+            <p class="texto-con-espaciado">
+                correo: mafiguero2002@gmail.com
+            </p>
+
+            <div class="image-text-container">
+                <img 
+                    src="assets/linkedin.png" 
+                    alt="Imagen linkedin" 
+                    width="20px"
+                    height="20px"
+                    onclick="redirectToLink('https://www.google.es')"
+                    class="cambiar-cursor" 
+                />
+                <div class="sin-formato">
+                    <a target="_blank" href="https://www.etsisi.upm.es/estudios/grados/61ci/ig"><p> @mafiguero</p></a>
+                </div>  
+            </div>
+            
+            <h2><span style="color:rgb(255, 255, 255)"><b>REFERENCIAS</b></span></h2>
+            <p>Mi universidad: <a target="_blank" href="https://www.etsisi.upm.es/">etsisi.upm.es</a>
+                <br>
+                Mi carrera:
+                <a target="_blank" href="https://www.etsisi.upm.es/estudios/grados/61ci/ig">Ingeniería de Computadores</a>   
+            </p>
+        </div>
+        <div class="bloque-left">
+            <div class="recuadro">
+                <a href="CV.pdf" download>Descargar CV</a>
+            </div>
+
+            <p class="texto-con-espaciado">
+                Madrid, Comunidad de Madrid
+                <br><br>
+                
+                España
+                <br><br>
+                © Portfolio Mafiguero 2023
+            </p>
+        </div>
+        <br><br>
+    </div>
+</body>
+</html>

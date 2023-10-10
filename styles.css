@@ -1,0 +1,163 @@
+.texto-con-espaciado {
+    line-height: 1.8;
+}
+.centrado {
+    text-align: center;
+}
+.derecha {
+    text-align: right;
+}
+.izquierda {
+    text-align: left;
+}
+body {
+    background-color: #1E1B1E;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    font-size: auto;
+    color: white;
+}
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-around;
+}
+.imagen {
+    width: 500px;
+    height: auto;
+}
+.imagen-redondeada {
+    border-radius: 10px;
+}
+.cambiar-cursor {
+    cursor: pointer;
+}
+.imagen-con-texto {
+    position: relative;
+}
+.imagen-con-texto img {
+    display: block;
+    margin: 0 auto;
+    float: leftt; /* Coloca la imagen a la derecha */
+    width: 100%;
+    height: auto;
+}
+.texto-superpuesto {
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    transform: translate(-50%, 100%);
+    background-color: rgba(185, 30, 30, 0); /* Fondo semi-transparente para el texto */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espacio alrededor del texto */
+}
+.levitacion {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto; /* Ajusta el margen según sea necesario */
+    position: relative;
+    animation: levitar 2s infinite alternate; /* Animación de levitación */
+}
+.levitacion::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Efecto de sombra */
+    z-index: -1;
+}
+@keyframes levitar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px); /* Ajusta la distancia de levitación */
+    }
+}
+.imagen-con-sombra {
+    margin: 100px auto;
+    background-image: url('ruta-de-tu-imagen.jpg');
+    background-size: cover;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.image-right {
+    flex: 1;
+    text-align: center;
+    margin-left: -30px;
+}
+.image-left {
+    flex: 1;
+    text-align: center;
+    margin-right: 30px;
+}
+.text-block-left {
+    flex: 1;
+    padding: 20px;
+    margin-right: -50px;
+}
+.text-block-rigth {
+    flex: 1;
+    padding: 20px;
+    margin-left: -300px;
+}
+.contenedor-bloques {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: auto;
+    padding: auto;
+}
+.bloque-right {
+    margin-left: 250px;
+    margin-right: 30px;
+}
+.bloque-left {
+    margin-right: 250px;
+    margin-left: 30px;
+}
+.recuadro {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #fff;
+}
+.recuadro:hover {
+background-color: rgba(255, 255, 255, 0.663);
+}
+.recuadro a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+.sin-formato a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+.image-text-container {
+    display: flex;
+    align-items: center;
+}
+.image-text-container img {
+    margin-right: 10px;
+}
+.lighter-black-bg {
+    background-color: #0b0b0b;
+    color: white;
+    padding: 20px;
+}
+.container-black {
+    background-color: #050505;
+    padding: 20px;
+    box-sizing: border-box;
+}

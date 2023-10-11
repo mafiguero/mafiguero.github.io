@@ -44,8 +44,8 @@
         }
         function cambiarImagenP2(accion) {
             var imagen = document.getElementById("miImagen2");
-            if (accion === 'entrar') { imagen.src = "assets/p11.png"; } 
-            else { imagen.src = "assets/p12.png"; }
+            if (accion === 'entrar') { imagen.src = "assets/p21.png"; } 
+            else { imagen.src = "assets/p22.png"; }
         }
 
         function redirectToLink(link) {
@@ -200,12 +200,12 @@
         &nbsp;&nbsp;&nbsp;&nbsp;
 
         <img id="miImagen2" 
-            src="assets/p12.png" 
+            src="assets/p22.png" 
             alt="Imagen 2" 
             onmouseover="cambiarImagenP2('entrar')" 
             onmouseout="cambiarImagenP2('salir')"              
             style="width: 500px; height: 300px;"
-            onclick="redirectToLink('https://www.google.es')"
+            onclick="redirectToLink('./proyects/kubico3.html')"
             class="cambiar-cursor imagen-redondeada levitacion imagen-con-sombra" 
         />
             

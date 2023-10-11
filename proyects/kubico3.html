@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Mafiguero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+
+    <script>
+        if (window.innerWidth <= 768) {
+            window.location.href = "mobile.html";
+        }
+        
+        function cambiarImagenInicio(accion) {
+            var imagen = document.getElementById("miImagenInicio");
+            if (accion === 'entrar') { imagen.src = "../assets/inicio1.png"; } 
+            else { imagen.src = "../assets/inicio2.png"; }
+        }
+        function cambiarImagenAbout(accion) {
+            var imagen = document.getElementById("miImagenAbout");
+            if (accion === 'entrar') { imagen.src = "../assets/about1.png"; } 
+            else { imagen.src = "../assets/about2.png"; }
+        }
+        function cambiarImagenCarrera(accion) {
+            var imagen = document.getElementById("miImagenCarrera");
+            if (accion === 'entrar') { imagen.src = "../assets/carrera1.png"; } 
+            else { imagen.src = "../assets/carrera2.png"; }
+        }
+        function cambiarImagenProyectos(accion) {
+            var imagen = document.getElementById("miImagenProyectos");
+            if (accion === 'entrar') { imagen.src = "../assets/proyectos1.png"; } 
+            else { imagen.src = "../assets/proyectos2.png"; }
+        }
+        function cambiarImagenContacto(accion) {
+            var imagen = document.getElementById("miImagenContacto");
+            if (accion === 'entrar') { imagen.src = "../assets/contacto1.png"; } 
+            else { imagen.src = "../assets/contacto2.png"; }
+        }
+
+        function cambiarImagenBack(accion) {
+            var imagen = document.getElementById("miImagenBack");
+            if (accion === 'entrar') { imagen.src = "../assets/back1.png"; } 
+            else { imagen.src = "../assets/back2.png"; }
+        }
+
+        function redirectToLink(link) {
+            window.location.href = link;
+        }
+    </script>    
+</head>
+<body>    
+    <br><br>
+    
+    <div class="derecha" class="contenedor-imagenes">
+        
+        <img id="miImagenInicio" 
+            src="../assets/inicio2.png" 
+            alt="Imagen Inicio" 
+            onmouseover="cambiarImagenInicio('entrar')"
+            onmouseout="cambiarImagenInicio('salir')"              
+            style="height: 25px;"
+            onclick="redirectToLink('../index.html#inicio')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenAbout" 
+            src="../assets/about2.png" 
+            alt="Imagen About" 
+            onmouseover="cambiarImagenAbout('entrar')"
+            onmouseout="cambiarImagenAbout('salir')"              
+            style="height: 25px;"
+            onclick="redirectToLink('../index.html#about')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenCarrera" 
+            src="../assets/carrera2.png" 
+            alt="Imagen Carrera" 
+            onmouseover="cambiarImagenCarrera('entrar')"
+            onmouseout="cambiarImagenCarrera('salir')"              
+            style="height: 25px;"
+            onclick="redirectToLink('../index.html#carrera')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenProyectos" 
+            src="../assets/proyectos2.png" 
+            alt="Imagen Proyectos" 
+            onmouseover="cambiarImagenProyectos('entrar')"
+            onmouseout="cambiarImagenProyectos('salir')"              
+            style="height: 25px;"
+            onclick="redirectToLink('../index.html#proyectos')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenContacto" 
+            src="../assets/contacto2.png" 
+            alt="Imagen Contacto" 
+            onmouseover="cambiarImagenContacto('entrar')"
+            onmouseout="cambiarImagenContacto('salir')"              
+            style="height: 25px;"
+            onclick="redirectToLink('#contacto')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div><br>
+
+    <div class="contenedor-fijo">
+        <img id="miImagenBack" 
+            src="../assets/back2.png" 
+            alt="Imagen Back" 
+            onmouseover="cambiarImagenBack('entrar')" 
+            onmouseout="cambiarImagenBack('salir')"              
+            style="width: 50px;"
+            title="Volver"
+            onclick="redirectToLink('../index.html#proyectos')"
+            class="cambiar-cursor" 
+        />
+    </div>
+
+    <div class="contenedor-bloques" id="carrera">
+        <div class="bloque-right">
+            <h1><b>─── PROYECTO KÚBICO<sup>3</sup> ───</b></h1>
+            <p class="texto-con-espaciado">
+                Cuando aprendí a resolver el cubo de Rubik, pensé que cualquiera era capaz de resolverlo si conocía el método 
+                y se lo habían enseñado correctamente. A lo largo de mi infancia he enseñado a muchos amigos y familiares a 
+                resolverlo de una manera muy simple en 7 simples pasos, aprendiéndose únicamente 3 simples algoritmos de movimientos. 
+                Una vez dispuse de los conocimientos suficientes de programación, me propuse hacer una aplicación que pudiera enseñar 
+                a cualquiera a resolver el cubo.
+                <br><br>
+                La idea de este proyecto surgió a raíz de un planteamiento en la que consideraba la posibilidad de que un programa en 
+                Python fuera capaz de reconocer los colores de las caras de un cubo de Rubik, para posteriormente, obtener los pasos 
+                que se han de seguir para resolverlo. Desde el principio, la idea no fue que el programa me dijera el menor número de 
+                movimientos para resolver el rompecabezas, ya que esos algoritmos, que son capaces de resolver el cubo de Rubik en menos 
+                de 23 movimientos (Número de Dios o God's Number), no sirven para que uno pueda aprender a resolver el cubo de Rubik, ya 
+                que no siguen un método genérico y se basan en complejos algoritmos matemáticos que utilizan reglas de la teoría de grupos. 
+                Mi idea consistía en que el programa te enseñase a resolver el cubo utilizando el método que todos aprendemos cuando 
+                comenzamos: "El método de principiantes".
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p23.png" alt="Imagen p23" height="400px"/>
+        </div>
+    </div>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">
+            <img src="../assets/p24.png" alt="Imagen p24" width="600px"/>
+        </div>
+        <div class="bloque-left" id="about">
+            <p class="texto-con-espaciado">
+                <h3><p><b>Este proyecto se divide en tres partes:</b></p></h3>
+                Una primera parte donde el usuario toma fotografías a las caras del cubo de Rubik una vez revuelto. Dichas imágenes son procesadas 
+                por un programa en Python que reconoce los colores de las piezas que forman la cara y devuelve por cada imagen, en forma de 
+                fichero, una matriz 3x3 que contiene los colores de la cara correspondiente. 
+                <br><br>
+                En la segunda parte se llama a un programa en C que trata todos los ficheros de matrices y los carga en una matriz 3D [6][3][3] 
+                para posteriormente llamar al algoritmo de resolución, también programado en C, que devuelve, 2 ficheros, uno con todos los 
+                movimientos que se deben hacer para resolver el cubo mediante “El método de principiantes” y otro fichero para poder deshacer 
+                el cubo y poder llegar al estado inicial “scramble”. 
+                <br><br>
+                Por último, se llama a un programa en Unity que carga el fichero scramble que le ha devuelto el programa en C y revuelve el 
+                cubo hasta alcanzar el mismo estado que el cubo al que se le han hecho las fotos. Finalmente, el usuario verá en el programa 
+                en Unity los pasos que ha de seguir para resolverlo, indicándole en todo momento la parte en la que se encuentra del “Método 
+                de Principiantes”.
+                <br><br>
+            </p>
+        </div>
+    </div> 
+
+    <div class="contenedor-bloques" id="carrera">
+        <div class="bloque-right">
+            <p class="texto-con-espaciado">
+                <h3><p><b>─── TRATAMIENTO DE IMÁGENES ───</b></p></h3>
+                Para el tratamiento de imágenes fue necesario programar en Python un proceso que detectase los colores de las piezas que 
+                formaban una cara y devolviese, por cada cara, un fichero con una matriz 3x3 con los colores de dicha cara. 
+                <br><br>
+                Para ello se usaron algunas librerías para Python como "Open CV" para el tratamiento de imágenes, "CSV" para manejo 
+                de ficheros y "Numpy" para manejo de arrays y matrices.
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+            <img src="../assets/p25.png" alt="Imagen p25" height="250px"/>
+        </div>
+    </div>
+
+    <div class="centrado">
+        <img class="imagen-redondeada imagen-con-sombra" src="../assets/p15.png" alt="Imagen r6tracker2" width="1000px"/>
+    </div>
+
+    <br><br>
+    <hr>
+    <div class="contenedor-bloques lighter-black-bg" id="contacto">
+        <br><br>
+        <div class="bloque-right">
+            <h1><b>─── CONTACTO ───</b></h1>
+            <h3><b>Miguel Ángel Figuero</b></h3>
+            <p class="texto-con-espaciado">
+                correo: mafiguero2002@gmail.com
+            </p>
+
+            <div class="image-text-container">
+                <img 
+                    src="../assets/linkedin.png" 
+                    alt="Imagen linkedin" 
+                    width="20px"
+                    height="20px"
+                    onclick="redirectToLink('https://www.google.es')"
+                    class="cambiar-cursor" 
+                />
+                <div class="sin-formato">
+                    <a target="_blank" href="https://www.etsisi.upm.es/estudios/grados/61ci/ig"><p> @mafiguero</p></a>
+                </div>  
+            </div>
+            
+            <h2><span style="color:rgb(255, 255, 255)"><b>REFERENCIAS</b></span></h2>
+            <p>Mi universidad: <a target="_blank" href="https://www.etsisi.upm.es/">etsisi.upm.es</a>
+                <br>
+                Mi carrera:
+                <a target="_blank" href="https://www.etsisi.upm.es/estudios/grados/61ci/ig">Ingeniería de Computadores</a>   
+            </p>
+        </div>
+        <div class="bloque-left">
+            <div class="recuadro">
+                <a href="../CV.pdf" download>Descargar CV</a>
+            </div>
+
+            <p class="texto-con-espaciado">
+                Madrid, Comunidad de Madrid
+                <br><br>
+                
+                España
+                <br><br>
+                © Portfolio Mafiguero 2023
+            </p>
+        </div>
+        <br><br>
+    </div>
+</body>
+</html>

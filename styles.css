@@ -77,7 +77,7 @@ body {
     }
 }
 .imagen-con-sombra {
-    margin: 100px auto;
+    margin: auto;
     background-image: url('ruta-de-tu-imagen.jpg');
     background-size: cover;
     box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);

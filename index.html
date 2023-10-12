@@ -47,6 +47,56 @@
             if (accion === 'entrar') { imagen.src = "assets/p21.png"; } 
             else { imagen.src = "assets/p22.png"; }
         }
+        function cambiarImagenP3(accion) {
+            var imagen = document.getElementById("miImagen3");
+            if (accion === 'entrar') { imagen.src = "assets/p31.png"; } 
+            else { imagen.src = "assets/p32.png"; }
+        }
+        function cambiarImagenP4(accion) {
+            var imagen = document.getElementById("miImagen4");
+            if (accion === 'entrar') { imagen.src = "assets/p41.png"; } 
+            else { imagen.src = "assets/p42.png"; }
+        }
+        function cambiarImagenP5(accion) {
+            var imagen = document.getElementById("miImagen5");
+            if (accion === 'entrar') { imagen.src = "assets/p51.png"; } 
+            else { imagen.src = "assets/p52.png"; }
+        }
+        function cambiarImagenP6(accion) {
+            var imagen = document.getElementById("miImagen6");
+            if (accion === 'entrar') { imagen.src = "assets/p61.png"; } 
+            else { imagen.src = "assets/p62.png"; }
+        }
+        function cambiarImagenP7(accion) {
+            var imagen = document.getElementById("miImagen7");
+            if (accion === 'entrar') { imagen.src = "assets/p71.png"; } 
+            else { imagen.src = "assets/p72.png"; }
+        }
+        function cambiarImagenP8(accion) {
+            var imagen = document.getElementById("miImagen8");
+            if (accion === 'entrar') { imagen.src = "assets/p81.png"; } 
+            else { imagen.src = "assets/p82.png"; }
+        }
+        function cambiarImagenP9(accion) {
+            var imagen = document.getElementById("miImagen9");
+            if (accion === 'entrar') { imagen.src = "assets/p91.png"; } 
+            else { imagen.src = "assets/p92.png"; }
+        }
+        function cambiarImagenPA(accion) {
+            var imagen = document.getElementById("miImagenA");
+            if (accion === 'entrar') { imagen.src = "assets/pA1.png"; } 
+            else { imagen.src = "assets/pA2.png"; }
+        }
+        function cambiarImagenPB(accion) {
+            var imagen = document.getElementById("miImagenB");
+            if (accion === 'entrar') { imagen.src = "assets/pB1.png"; } 
+            else { imagen.src = "assets/pB2.png"; }
+        }
+        function cambiarImagenPC(accion) {
+            var imagen = document.getElementById("miImagenC");
+            if (accion === 'entrar') { imagen.src = "assets/pC1.png"; } 
+            else { imagen.src = "assets/pC2.png"; }
+        }
 
         function redirectToLink(link) {
             window.location.href = link;
@@ -179,23 +229,26 @@
             <img class="imagen-redondeada imagen-con-sombra" src="assets/icc.jpg" alt="Imagen ICC" width="500px"/>
         </div>
     </div>
+
+    <br><br><br><br><br>
+
     <div class="centrado">
         <img src="assets/esquema.jpg" alt="Imagen Esquema" width="1000px"/>
     </div>
 
     <br><br><br><br><br><br>
 
-    <div class="centrado" class="contenedor-imagenes" id="proyectos">
-        <h1><b>─── MIS  PROYECTOS ───</b></h1>
+    <div class="centrado" id="proyectos">
+        <h1><b>─── MIS  PROYECTOS ───</b></h1><br><br>
 
         <img id="miImagen1" 
             src="assets/p12.png" 
             alt="Imagen 1" 
             onmouseover="cambiarImagenP1('entrar')"
             onmouseout="cambiarImagenP1('salir')"              
-            style="width: 500px; height: 300px;"
+            style="width: 400px; height: 240px;"
             onclick="redirectToLink('./proyects/r6tracker.html')"
-            class="cambiar-cursor imagen-redondeada levitacion imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
         />
         &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -204,12 +257,125 @@
             alt="Imagen 2" 
             onmouseover="cambiarImagenP2('entrar')" 
             onmouseout="cambiarImagenP2('salir')"              
-            style="width: 500px; height: 300px;"
+            style="width: 400px; height: 240px;"
             onclick="redirectToLink('./proyects/kubico3.html')"
-            class="cambiar-cursor imagen-redondeada levitacion imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
         />
-            
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagen3" 
+            src="assets/p32.png" 
+            alt="Imagen 3" 
+            onmouseover="cambiarImagenP3('entrar')" 
+            onmouseout="cambiarImagenP3('salir')"              
+            style="width: 400px; height: 240px;"
+            onclick="redirectToLink('./proyects/keylogger.html')"
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+        />
+
+        <br><br>
+
+        <img id="miImagen4" 
+            src="assets/p42.png" 
+            alt="Imagen 4" 
+            onmouseover="cambiarImagenP4('entrar')"
+            onmouseout="cambiarImagenP4('salir')"              
+            style="width: 400px; height: 240px;"
+            onclick="redirectToLink('./proyects/dragones&cavernas.html')"
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagen5" 
+            src="assets/p52.png" 
+            alt="Imagen 5" 
+            onmouseover="cambiarImagenP5('entrar')" 
+            onmouseout="cambiarImagenP5('salir')"              
+            style="width: 400px; height: 240px;"
+            onclick="redirectToLink('./proyects/kubico3.html')"
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagen6" 
+            src="assets/p62.png" 
+            alt="Imagen 6" 
+            onmouseover="cambiarImagenP6('entrar')" 
+            onmouseout="cambiarImagenP6('salir')"              
+            style="width: 400px; height: 240px;"
+            onclick="redirectToLink('./proyects/keylogger.html')"
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+        />
+
+        <br><br>
+
+        <img id="miImagen7" 
+            src="assets/p72.png" 
+            alt="Imagen 7" 
+            onmouseover="cambiarImagenP7('entrar')" 
+            onmouseout="cambiarImagenP7('salir')"              
+            style="width: 400px; height: 240px;"
+            onclick="redirectToLink('./proyects/kubico3.html')"
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagen8" 
+            src="assets/p82.png" 
+            alt="Imagen 8" 
+            onmouseover="cambiarImagenP8('entrar')" 
+            onmouseout="cambiarImagenP8('salir')"              
+            style="width: 400px; height: 240px;"
+            onclick="redirectToLink('./proyects/kubico3.html')"
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagen9" 
+            src="assets/p92.png" 
+            alt="Imagen 9" 
+            onmouseover="cambiarImagenP9('entrar')" 
+            onmouseout="cambiarImagenP9('salir')"              
+            style="width: 400px; height: 240px;"
+            onclick="redirectToLink('./proyects/kubico3.html')"
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+        />
+
+        <br><br>
+        <img id="miImagenB" 
+            src="assets/pB2.png" 
+            alt="Imagen B" 
+            onmouseover="cambiarImagenPB('entrar')" 
+            onmouseout="cambiarImagenPB('salir')"              
+            style="width: 400px; height: 240px;"
+            onclick="redirectToLink('./proyects/kubico3.html')"
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+        />
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenA" 
+            src="assets/pA2.png" 
+            alt="Imagen A" 
+            onmouseover="cambiarImagenPA('entrar')" 
+            onmouseout="cambiarImagenPA('salir')"              
+            style="width: 400px; height: 240px;"
+            onclick="redirectToLink('./proyects/kubico3.html')"
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenC" 
+            src="assets/pC2.png" 
+            alt="Imagen C" 
+            onmouseover="cambiarImagenPC('entrar')" 
+            onmouseout="cambiarImagenPC('salir')"              
+            style="width: 400px; height: 240px;"
+            onclick="redirectToLink('./proyects/kubico3.html')"
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+        />
     </div>
+
     <br><br>
     <hr>
 

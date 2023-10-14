@@ -43,9 +43,17 @@
             if (accion === 'entrar') { imagen.src = "../assets/back1.png"; } 
             else { imagen.src = "../assets/back2.png"; }
         }
+        function cambiarImagenYt(accion) {
+            var imagen = document.getElementById("miImagenYt");
+            if (accion === 'entrar') { imagen.src = "../assets/p29.png"; } 
+            else { imagen.src = "../assets/p210.png"; }
+        }
 
         function redirectToLink(link) {
             window.location.href = link;
+        }
+        function openLinkInNewTab(link) {
+            window.open(link, '_blank');
         }
     </script>    
 </head>
@@ -125,77 +133,68 @@
 
     <div class="contenedor-bloques" id="carrera">
         <div class="bloque-right">
-            <h1><b>─── R6 TRACKER ───</b></h1>
+            <br>
+            <h1><b>─── MI PRIMERA PÁGINA WEB ───</b></h1>
             <p class="texto-con-espaciado">
-                Desarrollé R6 Tracker en respuesta a la necesidad de una aplicación fiable capaz de identificar a todos 
-                los jugadores de una partida en un juego multijugador, permitiendo así proporcionar información relevante 
-                acerca de cada jugador, como su nivel actual, rango actual, o el rango máximo alcanzado, entre otros datos.
+                Mi último gran proyecto y desafío ha sido diseñar y crear este portafolio. Esta ha sido mi primera página y me ha servido para 
+                aprender HTML y CSS, ya que no tenía mucha experiencia con estos lenguajes. 
                 <br><br>
-                Ante la escasez de aplicaciones que realizaban esta función, los numerosos fallos que estás tenían y en muchos casos 
-                publicidad y pestañas emergentes con spam, me dispuse a programarlo por mí mismo desde cero.
-                <br><br>
-                Primero, tenía que pensar qué lenguaje de programación iba a utilizar y qué herramientas disponía para llevarlo a cabo. 
-                Elegí C porque lo conozco bien, 
-                y como no tenía tiempo para hacer una interfaz gráfica profesional, decidí usar la consola de Windows y unas librerías para 
-                darle color y mejorar un poco el aspecto.
+                A lo largo de mi formación en la informática he hecho y participado en numerosos proyectos algunos de la universidad y otros de 
+                carácter personal. Es por ello que sentía la necesidad de crear este portafolio como repositorio de mis trabajos.
                 <br><br>
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p12.png" alt="Imagen r6tracker" height="400px"/>
+            <br><br><br><br>
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pC2.png" alt="Imagen pC2" height="400px"/>
         </div>
     </div>
 
-    <br><br>
+    <br><br><br>
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img src="../assets/p13.png" alt="Imagen r6tracker-esquema" width="500px"/>
+            <img src="../assets/pC3.png" alt="Imagen pC3" width="500px"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
-                Primero busqué la manera de llevarlo a cabo y me di cuenta con el "Track Folder Changes" de que el juego, en cuanto empezaba una 
-                partida, lanzaba los avatares de todos los jugadores y sus IDs en una carpeta. Con eso pude hacer mi primer programa que periódicamente 
-                revisaba dicha carpeta en busca de nuevos archivos y cuando detectaba nuevos jugadores obtenía sus ids y los guardaba en un .txt 
-                que posteriormente se imprimía por la consola de mi programa.
+                <br>
+                Para hostear este portfolio he utilizado una herramienta de Github que me permite visualizar mi proyecto de HTML y CSS con el 
+                dominio “github.io”.
                 <br><br>
-                Mi siguiente paso consistía en planificar cómo proceder una vez tenía a mi disposición los ids de cada jugador detectado, 
-                con el objetivo de obtener sus respectivas estadísticas. Para ello, era necesario emplear un servicio de seguimiento 
-                específico para el videojuego, como "r6.tracker.network," y realizar una técnica de web scraping. Sin apenas conocimiento 
-                sobre web scraping en c, decidí utilizar la herramienta wget para obtener la ficha .html del jugador que se iba a trackear 
-                para posteriormente scrapear los datos que se iban a imprimir.
+                Para desarrollar mi software y tener siempre en la nube mi proyecto actualizado he utilizado “git” junto con un repositorio 
+                personal de Github. De esta manera puedes tener un mejor control de versiones de tu software. Gracias a algunos proyectos de 
+                la universidad en los que ya había utilizado este tipo de técnicas de desarrollo software mediante uso de repositorios, no 
+                tuve problemas para incorporarlas a este proyecto.
                 <br><br>
             </p>
         </div>
     </div> 
 
-    <br><br>
+    <br><br><br>
 
     <div class="contenedor-bloques" id="carrera">
         <div class="bloque-right">
             <p class="texto-con-espaciado">
-                Una vez disponía de todas las herramientas que necesitaba para hacer mi programa y de una planificación de cómo llevarlo a cabo, 
-                me dispuse a programarlo. Creé una struct "jugador" que contenía todos los datos que se iban a scrappear y posteriormente imprimir. 
-                Implementé una función para obtener cada dato de un jugador así como todas las funciones para imprimir los datos. Estas 
-                funciones fueron sin duda las más complicadas de llevar a cabo. 
+                Otra gran parte del diseño de esta web han sido sin duda los “assets”, para ello he hecho uso de algunos 
+                programas de edición de imágenes y de imagen vectorial. 
                 <br><br>
-                Finalmente agregué algunas funcionalidades más a mi programa como poder 
-                agregar amigos, o buscar estadísticas de un jugador en concreto escribiendo su Nick por teclado.
+                He querido cuidar cada mínimo detalle para conseguir un página web funcional, elegante, profesional y a la vez sencilla de 
+                implementar y programar, sin necesidad hacer uso de objetos de java script.
+                <br><br>
+                Como conclusión final quiero decir que me involucré en este proyecto para poder diseñar una página web personalizada que se adaptase 
+                perfectamente a mis necesidades. Así como aprender a programar en HTML y CSS y seguir formándome profesionalmente.
                 <br><br>
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p14.png" alt="Imagen r6tracker" height="400px"/>
+            <img src="../assets/pC4.png" alt="Imagen pC4" height="400px"/>
         </div>
     </div>
 
-    <br><br><br><br><br>
+    <br><br><br>
 
-    <div class="centrado">
-        <img class="imagen-redondeada imagen-con-sombra" src="../assets/p15.png" alt="Imagen r6tracker2" width="1000px"/>
-    </div>
-
-    <br><br><br><br>
+    <br><br>
     <hr>
     <div class="contenedor-bloques lighter-black-bg" id="contacto">
         <br><br>

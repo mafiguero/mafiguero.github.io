@@ -5,6 +5,7 @@
     <title>Portfolio Mafiguero</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <script>
         if (window.innerWidth <= 768) {
@@ -132,138 +133,148 @@
 
     <div class="contenedor-bloques" id="carrera">
         <div class="bloque-right">
-            <h1><b>─── RETO DE CIBERSEGURIDAD: CREACIÓN DE UN MALWARE<sup>3</sup> ───</b></h1>
+            <h1><b>─── RETO DE CIBERSEGURIDAD: CREACIÓN DE UN MALWARE ───</b></h1>
             <p class="texto-con-espaciado">
-                Cuando aprendí a resolver el cubo de Rubik, pensé que cualquiera era capaz de resolverlo si conocía el método 
-                y se lo habían enseñado correctamente. A lo largo de mi infancia he enseñado a muchos amigos y familiares a 
-                resolverlo de una manera muy simple en 7 simples pasos, aprendiéndose únicamente 3 simples algoritmos de movimientos. 
-                Una vez dispuse de los conocimientos suficientes de programación, me propuse hacer una aplicación que pudiera enseñar 
-                a cualquiera a resolver el cubo.
+                Mi gran interés en el campo de la ciberseguridad fue la razón que me motivó a llevar a cabo este desafío. Este proyecto 
+                representó un reto académico en el contexto de la asignatura de 'Seguridad en Sistemas y Redes' de la universidad, propuesto 
+                por el profesorado. Fue altamente valorado tanto por los estudiantes como por los profesores y, en colaboración con otros 
+                desafíos presentados por mis compañeros de equipo, nos llevó a ganar el premio al equipo con la mayor cantidad de desafíos 
+                presentados y evaluados exitosamente. 
+                Este reto, junto con el proyecto del cortafuegos, "Simulación de Ataque en 
+                NS3" (disponibles en este portfolio) y otros desafíos que presenté, me llevó a lograr una calificación de matrícula de honor 
+                en dicha asignatura.
                 <br><br>
-                La idea de este proyecto surgió a raíz de un planteamiento en la que consideraba la posibilidad de que un programa en 
-                Python fuera capaz de reconocer los colores de las caras de un cubo de Rubik, para posteriormente, obtener los pasos 
-                que se han de seguir para resolverlo. Desde el principio, la idea no fue que el programa me dijera el menor número de 
-                movimientos para resolver el rompecabezas, ya que esos algoritmos, que son capaces de resolver el cubo de Rubik en menos 
-                de 23 movimientos (Número de Dios o God's Number), no sirven para que uno pueda aprender a resolver el cubo de Rubik, ya 
-                que no siguen un método genérico y se basan en complejos algoritmos matemáticos que utilizan reglas de la teoría de grupos. 
-                Mi idea consistía en que el programa te enseñase a resolver el cubo utilizando el método que todos aprendemos cuando 
-                comenzamos: "El método de principiantes".
+                A lo largo de mi vida he tenido varias experiencias con virus informáticos que infectaron mis ordenadores en un pasado. 
+                Esto me ha llevado a estudiar cómo actúan y cómo se ejecutan en el sistema operativo. La única manera de vencerlos es 
+                conocer cómo trabajan para poder destruirlos desde dentro y poder evitarlos en un futuro.
                 <br><br>
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p23.png" alt="Imagen p23" height="400px"/>
+            <br><br><br><br>
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p33.png" alt="Imagen p33" height="350px"/>
         </div>
     </div>
 
+    <br><br><br>
+
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img src="../assets/p24.png" alt="Imagen p24" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p34.png" alt="Imagen p34" width="600px"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
-                <h3><p><b>Este proyecto se divide en tres partes:</b></p></h3>
-                Una primera parte donde el usuario toma fotografías a las caras del cubo de Rubik una vez revuelto. Dichas imágenes son procesadas 
-                por un programa en Python que reconoce los colores de las piezas que forman la cara y devuelve por cada imagen, en forma de 
-                fichero, una matriz 3x3 que contiene los colores de la cara correspondiente. 
+                <br>
+                El objetivo de este reto es crear un virus informático o malware cubriendo todas las etapas del mismo, desde cómo crear 
+                el troyano y que éste pase desapercibido por los antivirus, infectar a la máquina, ejecutar el malware y enviar los datos 
+                a un servidor para que el hacker pueda acceder a la información que se le extrae al usuario infectado.
                 <br><br>
-                En la segunda parte se llama a un programa en C que trata todos los ficheros de matrices y los carga en una matriz 3D [6][3][3] 
-                para posteriormente llamar al algoritmo de resolución, también programado en C, que devuelve, 2 ficheros, uno con todos los 
-                movimientos que se deben hacer para resolver el cubo mediante “El método de principiantes” y otro fichero para poder deshacer 
-                el cubo y poder llegar al estado inicial “scramble”. 
+                Es necesario aclarar que este proyecto <b>SE HA LLEVADO ÚNICA Y EXCLUSIVAMENTE CON MÉRITOS EDUCATIVOS</b> y no me hago responsable de 
+                cualquier réplica del mismo.
                 <br><br>
-                Por último, se llama a un programa en Unity que carga el fichero scramble que le ha devuelto el programa en C y revuelve el 
-                cubo hasta alcanzar el mismo estado que el cubo al que se le han hecho las fotos. Finalmente, el usuario verá en el programa 
-                en Unity los pasos que ha de seguir para resolverlo, indicándole en todo momento la parte en la que se encuentra del “Método 
-                de Principiantes”.
+                La primera etapa del proceso de infección es la descarga del virus informático. En este supuesto, el usurario quiere descargar 
+                un juego de manera gratuita y acude a nuestra página web donde descarga el juego que contendrá el virus que hemos creado. 
+                Para que éste pase desapercibido por la mayoría de antivirus, se ha cifrado el archivo comprimido que contiene el juego 
+                junto con el malware, mediante una contraseña que se proporcionará previamente a la víctima. Este tipo de cifrado es muy 
+                utilizado en la actualidad para camuflar troyanos y debemos sospechar ante este tipo de situaciones, si no queremos ser infectados.
                 <br><br>
             </p>
         </div>
     </div> 
 
-    <div class="contenedor-bloques" id="carrera">
-        <div class="bloque-right">
-            <p class="texto-con-espaciado">
-                <h3><p><b>─── 1. TRATAMIENTO DE IMÁGENES ───</b></p></h3>
-                Para el tratamiento de imágenes fue necesario programar en Python un proceso que detectase los colores de las piezas que 
-                formaban una cara y devolviese, por cada cara, un fichero con una matriz 3x3 con los colores de dicha cara. 
-                <br><br>
-                Para ello se usaron algunas librerías para Python como "Open CV" para el tratamiento de imágenes, "CSV" para manejo 
-                de ficheros y "Numpy" para manejo de arrays y matrices.
-                <br><br>
-            </p>
-        </div>
-        <div class="bloque-left">
-            <img src="../assets/p25.png" alt="Imagen p25" height="250px"/>
-        </div>
-    </div>
-
-    <div class="contenedor-bloques">
-        <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p26.png" alt="Imagen p26" width="600px"/>
-        </div>
-        <div class="bloque-left" id="about">
-            <p class="texto-con-espaciado">
-                <h3><p><b>─── 2. ALGORITMO ───</b></p></h3>
-                La segunda parte del proyecto corresponde con el programa encargado del “algoritmo de resolución”. Este tomará los 
-                ficheros devueltos por el programa de Python y cargará en memoria una matriz 3D [6][3][3] (6 matrices 3x3) una por 
-                cada color, correspondiente a cada una de las caras del cubo. Una vez cargada, se llamará al algoritmo que calculará 
-                los movimientos de necesarios para la resolución del rompecabezas.  
-                <br><br>
-                El algoritmo, al igual que el “Método Principiantes” consta de 7 partes tal y como se muestra en la imagen. 
-                <br><br>
-            </p>
-        </div>
-    </div>
+    <br><br><br>
 
     <div class="contenedor-bloques" id="carrera">
         <div class="bloque-right">
             <p class="texto-con-espaciado">
-                El algoritmo lo desarrollé por completo en lenguaje C utilizando librerías estándar. La única librería externa 
-                empleada es "rlutil.h" para mostrar las caras del cubo 2D a medida que se van completando las diferentes etapas del 
-                algoritmo. Esto se logra utilizando la función setBackGroundColor() de dicha librería, la cual permite cambiar el color 
-                de fondo en la consola 
+                Una vez el usuario descomprima el archivo comprimido, extraerá un único ejecutable llamado “setup.exe” que es el instalador del 
+                juego y a su vez el instalador del malware. Es el caballo de troya. Para crear este setup he utilizado la herramienta gratuita 
+                “inno setup compiler” que nos permite crear y modificar un instalador. Este instalador copia una serie de archivos, en concreto, 
+                los que están remarcados en rojo “MicrosofTools.exe” (Lanzador) y “svhost.exe” (KeyLogger) en una ruta que sólo conocerá el atacante. 
                 <br><br>
-                Para llevar a cabo algunas partes de la resolución ha sido necesario recurrir algoritmos de exploración de estados que 
-                calculan los distintos caminos que se pueden tomar, basándose en un valor heurístico para decidir cuál es el mejor 
-                camino para llegar al estado deseado. 
+                La siguiente etapa es la instalación del “caballo de Troya”. Cuando el usuario haga “doble click” sobre el setup se le mostrará 
+                un mensaje por el sistema operativo: “¿Desea que esta aplicación realice cambios en el equipo?”. Si el usuario desea instalar 
+                su juego deberá dar permisos al instalador para que éste cree los directorios y copie en ellos los archivos del juego. 
                 <br><br>
-                Por ejemplo, en la parte del algoritmo de orientación de la cruz blanca el 
-                heurístico sería el número de centros que estén bien colocados (objetivo heurístico == 4) y los distintos caminos 
-                serían las distintas maneras de insertar una arista blanca, es decir, una de las piezas que conforman la cruz blanca.
+                Esta vulnerabilidad se aprovecha para con permisos de administrador ejecutar cualquier comando que programemos en el setup. En 
+                este caso para extraer el malware e instalarlo. 
                 <br><br>
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p27.png" alt="Imagen p27" height="500px"/>
+            <img src="../assets/p35.png" alt="Imagen p35" height="400px"/>
         </div>
     </div>
 
+    <br><br><br>
+
     <div class="contenedor-bloques">
-        <div class="bloque-right">
-            <img id="miImagenYt"
-                class="imagen-redondeada imagen-con-sombra cambiar-cursor" 
-                src="../assets/p210.png" 
-                alt="Imagen p210" 
-                width="600px"
-                onmouseover="cambiarImagenYt('entrar')"
-                onmouseout="cambiarImagenYt('salir')"              
-                onclick="openLinkInNewTab('https://youtu.be/8ZLIFcEPrBI?si=DfeiiY5KnI2sArRq')"
-            />
-        </div>
-        <div class="bloque-left" id="about">
+        <div class="bloque-right">       
             <p class="texto-con-espaciado">
-                <h3><p><b>─── 3. VISUALIZACIÓN ───</b></p></h3>
-                Para finalizar, una vez se obtenemos los movimientos que se deben realizar para completar los distintos pasos del “Método 
-                de Principiantes”, se llamará a un programa que visualizará los pasos uno por uno mediante un Cubo Virtual 3D animado y 
-                que mostrará el paso correspondiente de dicho método que se está realizando en ese momento.
+                El proceso de instalación es muy sencillo y parecido a cualquier instalador normal y corriente. Al usuario se le irán mostrando 
+                una serie de ventanas en las que el usuario podrá personalizar la ruta de instalación del juego (no afecta a la ruta de 
+                instalación del virus que recordemos es fija), elegir si quiere crear un acceso directo en el escritorio, etc. La victima irá 
+                haciendo “click” en la casilla de “siguiente” hasta que se termine de instalar y descomprimir todos los archivos.   
                 <br><br>
-                Para la implementación del programa de visualización del cubo utilicé el entorno de Unity y el uso de numerosos scripts, 
-                programados en lenguaje C#. 
+                Finalmente se le mostrará la ventana de “Instalación completada” y aparecerá la casilla por defecto marcada para ejecutar 
+                la aplicación. A continuación se ejecutará “Starter.exe”. Este “starter” crea una extensión en el registro de Windows para 
+                que el lanzador del keylogger que he llamado “MicrosofTools.exe” y que se ha copiado en una ruta que hemos especificado 
+                gracias al instalador, se ejecute cada vez que el usuario arranque el PC. 
                 <br><br>
-                Os dejo un vídeo (enlace a youtube desde la imagen) completo de la instalación y demostración de la aplicación Kúbico<sup>3</sup>.
+                Una vez se ejecuta este pequeño scrip, se hace una llamada al ejecutable “uns0013.exe” que es el verdadero ejecutable que inicializa 
+                el juego. De esta manera el usuario puede disfrutar de su juego gratuito y confiar en nuestro servicio.
                 <br><br>
             </p>
+        </div>
+        <div class="bloque-left">
+
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="contenedor-bloques" id="carrera">
+        <div class="bloque-right">
+            <img src="../assets/p36.png" alt="Imagen p36" height="500px"/>
+        </div>
+        <div class="bloque-left">
+            <p class="texto-con-espaciado">
+                Una vez terminado el proceso de instalación encontramos el juego o aplicación (caballo de troya) y sus correspondientes archivos. 
+                En este este caso el ejecutor de la aplicación está modificado y además de ejecutar el juego, ejecuta un proceso denominado 
+                “Starter.c”.
+                Este “Starter”, programado en c, ejecutará un pequeño scrip y luego llamara al ejecutable “aplicación” (juego).
+                El propósito de este script es crear una excepción en el registro del sistema operativo para que nuestro malware se ejecute cada vez que el usuario 
+                arranque el pc, sin necesidad de que esté usando nuestra aplicación gratuita.
+                <br><br>
+                Por otro lado en una capeta que se creó durante el proceso de instalación se encuentran los dos ejecutables que forman el malware: El lanzador 
+                “MicrosofTools.exe” y el KeyLogger renombrado para pasar desapercibido “svhost.exe”:
+                <br><br>
+                - El lanzador se encarga de crear un proceso hijo en segundo plano que ejecuta el keylogger (svhost.exe).
+                <br><br>
+                - El KeyLogger programa que se encarga crear un proceso esclavo que recoge todo lo que el usuario introduce por teclado. Esta salida se almacena en 
+                un buffer que mediante otro proceso esclavo, se cifra mediante RSA y se guarda en un fichero salida. De esta forma los datos se cifran con una 
+                clave pública y solamente se pueden descifrar con una clave privada que posee el hacker.
+                <br><br>
+            </p>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">       
+            <p class="texto-con-espaciado">
+                Todos estos programas han sido programados desde cero en lenguaje C e hice uso de algunos métodos de ocultación de malware para despistar a 
+                los compiladores y de esta manera, que sea muy complicado entender la dinámica del programa y no puedan saltar alertas.   
+                <br><br>
+                Por último quedaría enviar dichos ficheros cifrados a un servidor externo desde el cual el hacker pueda acceder a estos archivos. Dada la complejidad 
+                de esta implementación, el poco tiempo del que se disponía para este reto, simplemente expuse algunas opciones para poder llevarlo a cabo que no 
+                explicaré para no extenderme demasiado en este blog.
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+
         </div>
     </div>
 

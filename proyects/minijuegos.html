@@ -43,10 +43,15 @@
             if (accion === 'entrar') { imagen.src = "../assets/back1.png"; } 
             else { imagen.src = "../assets/back2.png"; }
         }
-        function cambiarImagenYt(accion) {
-            var imagen = document.getElementById("miImagenYt");
-            if (accion === 'entrar') { imagen.src = "../assets/p29.png"; } 
-            else { imagen.src = "../assets/p210.png"; }
+        function cambiarImagenYt2(accion) {
+            var imagen = document.getElementById("miImagenYt2");
+            if (accion === 'entrar') { imagen.src = "../assets/pA7.png"; } 
+            else { imagen.src = "../assets/pA8.png"; }
+        }
+        function cambiarImagenYt3(accion) {
+            var imagen = document.getElementById("miImagenYt3");
+            if (accion === 'entrar') { imagen.src = "../assets/pA11.png"; } 
+            else { imagen.src = "../assets/pA12.png"; }
         }
 
         function redirectToLink(link) {
@@ -155,14 +160,16 @@
         </div>
     </div>
 
-    <br><br><br>
+    <br><br>
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
+            <br><br>
             <img src="../assets/pA4.png" alt="Imagen pA4" width="500px"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
+                <h1><b>─── JUEGO DEL DINOSAURIO ───</b></h1>
                 <br>
                 Tras mi fracaso en dicha asignatura no me rendí, me gustaba la programación y sentía que las herramientas que me daban en 
                 clase eran insuficientes para poder remontar la asignatura, así que me busqué “mini-proyectos” por mí mismo que me 
@@ -173,7 +180,7 @@
                 <br><br>
                 Este proyecto consistía en replicar el famoso juego del dinosaurio de google o una versión muy simplificada del famoso 
                 videojuego “Geometry Dash”. Mi idea desde el principio fue que este programa se ejecutase en 
-                la consola de windows.
+                la consola de windows. 
                 <br><br>
             </p>
         </div>
@@ -184,20 +191,164 @@
     <div class="contenedor-bloques" id="carrera">
         <div class="bloque-right">
             <p class="texto-con-espaciado">
-                Otra gran parte del diseño de esta web han sido sin duda los “assets”, para ello he hecho uso de algunos 
-                programas de edición de imágenes y de imagen vectorial. 
+                La aplicación ofrece un menú con diversas opciones, incluyendo la capacidad de personalizar el icono que se utilizará para 
+                superar los obstáculos que aparezcan (cualquier carácter del código ASCII), así como la opción de personalizar el carácter 
+                que representa a los obstáculos.
                 <br><br>
-                He querido cuidar cada mínimo detalle para conseguir un página web funcional, elegante, profesional y a la vez sencilla de 
-                implementar y programar, sin necesidad hacer uso de objetos de java script.
+                También hay algunas otras opciones como activar el modo “hacker” que salta los obstáculos automáticamente (modo demostración) 
+                y el activar o desactivar el modo desarrollador para ver en tiempo real todos los frames, muy útil para detectar errores o 
+                bugs durante la programación del minijuego.
+            </p>
+        </div>
+        <div class="bloque-left">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA5.png" alt="Imagen pA5" height="250px"/>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA6.png" alt="Imagen pA6" width="500px"/>
+        </div>
+        <div class="bloque-left" id="about">
+            <p class="texto-con-espaciado">
+                <br>
+                La dinámica del programa se basa en un sistema de tiempo real que cada cierto tiempo (dependiendo de la velocidad actual de la cinta), 
+                comprueba si el jugador ha pulsado alguna tecla como el espacio (saltar) o escape:
                 <br><br>
-                Como conclusión final quiero decir que me involucré en este proyecto para poder diseñar una página web personalizada que se adaptase 
-                perfectamente a mis necesidades. Así como aprender a programar en HTML y CSS y seguir formándome profesionalmente.
+                - Si el usuario pulsa la tecla “espacio”, se llama a función "saltar()" que hace la animación de saltar y avanza 1 posición en la cinta.
+                <br><br>
+                - Si el usuario pulsa la tecla “escape”, se pausa el juego y se imprime el menú de opciones (pausa).
+                <br><br>
+                Trascurrido ese tiempo si el usuario no ha pulsado ninguna tecla se avanza una posición en la cinta (comprobando que el jugador no 
+                ha sido eliminado por un obstáculo) y se imprime el nuevo escenario.
+                <br><br>
+            </p>
+        </div>
+    </div> 
+
+    <br><br><br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">       
+            <p class="texto-con-espaciado">
+                La cinta consta de una matriz de 2 dimensiones que se compone de 2 arrays de caracteres que representan el escenario. Esta 
+                matriz se va desplazando un carácter a la izquierda según va avanzando la cinta a la vez que se van generando nuevos obstáculos 
+                aleatoriamente con cierta probabilidad cada vez más alta. A medida que va avanzando el juego, la dificultad aumenta, 
+                aumentando la velocidad, la probabilidad de obstáculos y las rachas de obstáculos seguidos. Por supuesto al aumentar 
+                la velocidad la distancia de salto aumenta y por eso se generan obstáculos más grandes.
+                <br><br>
+                El juego está programado para que no tenga fin. De esta manera el usuario puede siempre superar su record que simboliza el  
+                mejor tiempo aguantado en la cinta sin fallar ningún salto.
+                <br><br>
+                Este tiempo aguantado, mejor dicho número de posiciones que ha avanzado la cinta sin que el jugador haya fallado, se muestra 
+                en la parte superior como “core”.  
+                <br><br>
+                Os dejo un vídeo (enlace a youtube desde la imagen) que he realizado para enseñaros una pequeña demostración del funcionamiento del minijuego.
                 <br><br>
             </p>
         </div>
         <div class="bloque-left">
-            <img src="../assets/pC4.png" alt="Imagen pC4" height="400px"/>
+            <img id="miImagenYt2"
+                class="imagen-redondeada imagen-con-sombra cambiar-cursor" 
+                src="../assets/pA8.png" 
+                alt="Imagen pA8" 
+                width="600px"
+                onmouseover="cambiarImagenYt2('entrar')"
+                onmouseout="cambiarImagenYt2('salir')"              
+                onclick="openLinkInNewTab('https://www.youtube.com/watch?v=no8lgSU2JQg')"
+            />
         </div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div class="contenedor-bloques" id="carrera">
+        <div class="bloque-right">
+            <br>
+            <h1><b>─── WORDLE DE MAF ───</b></h1>
+            <p class="texto-con-espaciado">
+                Otro gran proyecto de programación y todo un reto, fue replicar el famoso juego de “wordle”. Todo comenzó cuando me apasioné 
+                por este pasatiempo, pero el único problema que enfrenté fue la restricción de poder jugar solo una palabra al día. Motivado 
+                por esto, me dispuse a crearlo por mí mismo.
+                <br><br>
+                El juego Wordle implica adivinar una palabra de cinco letras en un máximo de seis intentos, con pistas proporcionadas en forma 
+                de colores: letras correctas y en la posición correcta se resaltan en verde, letras correctas pero en la posición incorrecta 
+                se destacan en amarillo, y letras incorrectas en rojo, lo que ayuda al jugador a deducir la palabra objetivo antes de agotar 
+                sus intentos.
+                <br><br>
+                Al igual que el anterior minijuego que he explicado anteriormente, decidí escoger el lenguaje de programación C porque me resulta 
+                muy cómodo y fácil a la vez.
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+            <br><br><br><br>
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA10.png" alt="Imagen pA10" height="400px"/>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA9.png" alt="Imagen pA9" width="500px"/>
+        </div>
+        <div class="bloque-left" id="about">
+            <p class="texto-con-espaciado">
+                <br>
+                Tras conseguir un fichero con todas las palabras del diccionario con 5 letras, creé el programa con la siguiente interfaz:
+                <br><br>
+                <b>1. Jugar al Wordle</b>: Genera una palabra aleatoriamente y el jugador tiene 6 intentos para adivinarla junto con las pistas 
+                que se le van presentando en cada intento.
+                <br><br>
+                <b>2. Buscar palabra</b>: Este modo de juego lo diseñé para averiguar la palabra diaria del wordle usando la máquina. Según 
+                las pistas que le vas proporcionando, te muestra todas las posibles opciones que encajan con dichas pistas, hasta llegar a la 
+                palabra correcta.
+                <br><br>
+                <b>3. Imprimir all words</b>: Esta opción imprime todas las palabras de 5 letras del diccionario.
+                <br><br>
+                <b>4. Palabra del día</b>: Esta opción genera una semilla a partir de la fecha actual, generando la misma palabra en todos 
+                los dispositivos que ejecuten la aplicación el mismo día. Este modo imita la dinámica del wordle original.
+                <br><br>
+                <b>5. IA vs IA</b>: En este modo se une el modo “Jugar al Wordle” y el modo “Buscar palabra”, de esta manera juega la máquina 
+                contra la máquina. Muy útil para comprobar la inteligencia del programa de búsqueda de palabras y comprobar su efectividad. 
+                Así como detectar errores o bugs durante la programación.
+                <br><br>
+            </p>
+        </div>
+    </div> 
+
+    <br><br><br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">       
+            <p class="texto-con-espaciado">
+                Como en el anterior minijuego, os dejo un vídeo (enlace a youtube desde la imagen) que he realizado para enseñaros una pequeña 
+                demostración del funcionamiento de todos estos modos mencionados anteriormente sobre mi aplicación.   
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+            
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="centrado">
+        <img id="miImagenYt3"
+            class="imagen-redondeada imagen-con-sombra cambiar-cursor" 
+            src="../assets/pA12.png" 
+            alt="Imagen pA12" 
+            width="1000px"
+            onmouseover="cambiarImagenYt3('entrar')"
+            onmouseout="cambiarImagenYt3('salir')"              
+            onclick="openLinkInNewTab('https://www.youtube.com/watch?v=cOOKs-6EX70')"
+        />
     </div>
 
     <br><br><br>

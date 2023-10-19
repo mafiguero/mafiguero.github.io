@@ -124,6 +124,16 @@ body {
     margin-right: 250px;
     margin-left: 30px;
 }
+.bloque-right-pad {
+    margin-left: 250px;
+    margin-right: 30px;
+    padding: 5px;
+}
+.bloque-left-pad {
+    margin-right: 250px;
+    margin-left: 30px;
+    padding: 5px;
+}
 .recuadro {
     background-color: rgba(255, 255, 255, 0.2);
     width: 200px;
@@ -169,4 +179,11 @@ background-color: rgba(255, 255, 255, 0.663);
     background-color: #1e1b1e00;
     padding: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+.max-img-height img {
+    max-width: 100%;
+    height: auto;
+}
+.bloque-con-texto {
+    padding: 40px;
 }

@@ -131,20 +131,51 @@
         />
     </div>
 
-    <br><br><br>
-
     <div class="contenedor-bloques" id="carrera">
         <div class="bloque-right">
-            <h1><b>─── DRAGONES & CAVERNAS ───</b></h1>
+            <br>
+            <h1><b>─── SIMULACIÓN DE ATAQUE CON NS3 ───</b></h1>
             <p class="texto-con-espaciado">
-                PRÓXIMAMENTE ...
+                Este proyecto representó un reto académico en el contexto de la asignatura de 'Seguridad en Sistemas y Redes' de la universidad, 
+                propuesto por el profesorado. Fue altamente valorado tanto por los estudiantes como por los profesores y, en colaboración con 
+                otros desafíos presentados por mis compañeros de equipo, nos llevó a ganar el premio al equipo con la mayor cantidad de 
+                desafíos presentados y mejor valorados que el resto de equipos. Este reto, junto con el proyecto del cortafuegos, 
+                "Creación de un Malware" (disponibles en este portfolio) y otros desafíos que presenté, me llevó a lograr una calificación 
+                de matrícula de honor en dicha asignatura. 
                 <br><br>
-                
+                En este reto se va a intentar simular un ataque Distribuido de Denegación de Servicio (DDoS) a una infraestructura. Con este 
+                objetivo en mente, se generará un gemelo en ns3 para mostrar el ataque diseñado. 
+                La intención es poder analizar lo que ocurre por dentro a la infraestructura cuando se está realizando el ataque: ver el tráfico 
+                que pasa por los routers, la saturación, como se le impide a los usuarios legítimos acceder, etc. 
                 <br><br>
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p.png" alt="Imagen p" height="400px"/>
+            <br><br><br><br>
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB2.png" alt="Imagen pB2" height="350px"/>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">       
+            <p class="texto-con-espaciado">
+                En este caso hemos creado un gemelo que representa la infraestructura de la etsisi (https://www.etsisi.upm.es/). Este gemelo cuenta 
+                con un router que está conectado a un switch (representando una red grande con varios switches), y luego este switch se conecta con 
+                el router final que une con el servidor principal.
+                <br><br>
+                El usuario intentará acceder a la etsisi a través del router1, pero el hacker se lo impedirá utilizando una botnet de 20 dispositivos.
+                <br><br>
+                El primer paso para realiza la simulación de nuestro ataque es obtener la ip de la infraestructura que vamos a atacar, para lo que 
+                utilizamos el comando ping y nslookup. 
+                Además, con el comando ping podemos ver las velocidades de respuesta de los servidores de la etsisi, información que resultará 
+                importante posteriormente cuando hagamos el código de ns3.
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+            
         </div>
     </div>
 
@@ -152,17 +183,109 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img src="../assets/p.png" alt="Imagen p" width="500px"/>
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB3.png" alt="Imagen pB3" width="500px"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
-                
-                <br><br>
-
+                La topología que diseñé se componía de 5 nodos:<br><br>
+                -n0. Es el usuario que quiere conectarse a la red. <br>
+                -n1. Es el router con el que se establece conexión.<br>
+                -n2. Es el switch de la red.<br>
+                -n3. Es el router final que se conecta al servidor.<br>
+                -n4. Es el servidor.<br><br>
+                Además, tenemos dos tipos de conexiones, pp1 (800 Mbps y un tiempo 
+                RTT) y pp2 (2 Mbps con un tiempo RTT de 20ms). Las conexiones entre 
+                el usuario y la red, así como la conexión del switch final con el servidor 
+                son del tipo pp1 y el resto de ellas son del tipo pp2. Cabe destacar que 
+                pp es el acrónimo de Peer To Peer.
                 <br><br>
             </p>
         </div>
     </div> 
+
+    <br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">       
+            <p class="texto-con-espaciado">
+                Tras recopilar los datos mencionados anteriormente, se realiza una primera versión del código de nuestro programa. 
+                A continuación, tras completar el código y corregirlo de posibles errores de sintaxis, se procede a la compilación del mismo, 
+                que generá un fichero “.xml” de simulación para cargar y poder observar los resultados en el programa NetAnim.
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+            
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">       
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB4.png" alt="Imagen pB4" height="500px"/>
+            <p class="texto-con-espaciado">
+                Primero el usuario que intenta acceder al servicio de la UPM manda un <br>
+                paquete de solicitud de conexión.
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB5.png" alt="Imagen pB5" height="500px"/>
+            <p class="texto-con-espaciado">
+                Al cabo de un tiempo prolongado, como podemos observar el paquete <br>
+                de solicitud acaba llegando al servidor de la UPM (nodo 4).
+                <br><br>
+            </p>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">       
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB6.png" alt="Imagen pB6" height="500px"/>
+            <p class="texto-con-espaciado">
+                Después de superar innumerables colisiones por culpa del tráfico <br>
+                generado por la botNet, el paquete de aceptación acaba llegando <br>
+                al usuario.
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB7.png" alt="Imagen pB7" height="500px"/>
+            <p class="texto-con-espaciado">
+                Ahora el usuario, tras recibir el paquete de aceptación envía más <br>
+                paquetes con destino el servidor UPM.
+                <br><br>
+            </p>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">       
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB8.png" alt="Imagen pB8" height="500px"/>
+            <p class="texto-con-espaciado">
+                Finalmente los paquetes del usuario no acaban llegando (por lo menos en el <br>
+                tiempo de simulación) al servidor debido al excesivo tráfico y la saturación <br>
+                de los buffers de los nodos. Podemos observar que el ataque se ha ejecutado <br>
+                correctamente y hemos conseguido la denegación del servicio al usuario.
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB9.png" alt="Imagen pB9" height="500px"/>
+            <p class="texto-con-espaciado">
+                En esta imagen proporcionada por el programa NetAnim se puede observar<br> 
+                gráficamente los paquetes generados por cada nodo y cómo se concentran en el nodo 1.
+                <br><br>
+            </p>
+        </div>
+    </div>
+
+    <br><br><br>
 
     <br><br>
     <hr>

@@ -8,9 +8,6 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <script>
-        if (window.innerWidth <= 768) {
-            window.location.href = "mobile.html";
-        }
         
         function cambiarImagenInicio(accion) {
             var imagen = document.getElementById("miImagenInicio");
@@ -58,83 +55,75 @@
     </script>    
 </head>
 <body>    
-    <br><br>
-    
-    <div class="derecha" class="contenedor-imagenes">
+    <hr>
+    <br><div class="contenedor-imagenes centrado">
         
         <img id="miImagenInicio" 
             src="../assets/inicio2.png" 
             alt="Imagen Inicio" 
             onmouseover="cambiarImagenInicio('entrar')"
-            onmouseout="cambiarImagenInicio('salir')"              
-            style="height: 25px;"
-            onclick="redirectToLink('../index.html#inicio')"
+            onmouseout="cambiarImagenInicio('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#inicio')"
             class="cambiar-cursor"
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
 
         <img id="miImagenAbout" 
             src="../assets/about2.png" 
             alt="Imagen About" 
             onmouseover="cambiarImagenAbout('entrar')"
-            onmouseout="cambiarImagenAbout('salir')"              
-            style="height: 25px;"
-            onclick="redirectToLink('../index.html#about')"
+            onmouseout="cambiarImagenAbout('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#about')"
             class="cambiar-cursor"
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
 
         <img id="miImagenCarrera" 
             src="../assets/carrera2.png" 
-            alt="Imagen Carrera" 
+            alt="Imagen About" 
             onmouseover="cambiarImagenCarrera('entrar')"
-            onmouseout="cambiarImagenCarrera('salir')"              
-            style="height: 25px;"
-            onclick="redirectToLink('../index.html#carrera')"
+            onmouseout="cambiarImagenCarrera('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#carrera')"
             class="cambiar-cursor"
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
 
         <img id="miImagenProyectos" 
             src="../assets/proyectos2.png" 
             alt="Imagen Proyectos" 
             onmouseover="cambiarImagenProyectos('entrar')"
-            onmouseout="cambiarImagenProyectos('salir')"              
-            style="height: 25px;"
-            onclick="redirectToLink('../index.html#proyectos')"
+            onmouseout="cambiarImagenProyectos('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#proyectos')"
             class="cambiar-cursor"
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
 
         <img id="miImagenContacto" 
             src="../assets/contacto2.png" 
             alt="Imagen Contacto" 
             onmouseover="cambiarImagenContacto('entrar')"
-            onmouseout="cambiarImagenContacto('salir')"              
-            style="height: 25px;"
-            onclick="redirectToLink('#contacto')"
+            onmouseout="cambiarImagenContacto('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#contacto')"
             class="cambiar-cursor"
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </div><br>
-
-    <div class="contenedor-fijo">
-        <img id="miImagenBack" 
-            src="../assets/back2.png" 
-            alt="Imagen Back" 
-            onmouseover="cambiarImagenBack('entrar')" 
-            onmouseout="cambiarImagenBack('salir')"              
-            style="width: 50px;"
-            title="Volver"
-            onclick="redirectToLink('../index.html#proyectos')"
-            class="cambiar-cursor" 
-        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
     </div>
 
-    <div class="contenedor-bloques" id="carrera">
-        <div class="bloque-right">
-            <br>
-            <h1><b>─── SMART HOUSE ───</b></h1><br>
+    <hr>
+
+    <div class="bloque-con-texto" id="carrera">
+
+            <h2><b>── SMART HOUSE ──</b></h2><br>
             <p class="texto-con-espaciado">
                 SmartHouse es un proyecto final en el contexto de la asignatura Programación de Hardware Reconfigurable, que pone en práctica 
                 muchos aspectos y destrezas desarrolladas a lo largo de la ingeniería de computadores.
@@ -148,20 +137,17 @@
                 este proyecto se suma a esta tendencia, explorando y aprendiendo sobre estas nuevas tecnologías.
                 <br><br>
             </p>
-        </div>
-        <div class="bloque-left">
-            <br><br><br><br>
-            <img class="imagen-con-sombra" src="../assets/p9/p93.png" alt="Imagen p93" height="400px"/>
+
+        <div class="centrado">
+            <img class="imagen-con-sombra" src="../assets/p9/p93.png" alt="Imagen p93" width="300px"/>
         </div>
     </div>
 
-    <br><br><br>
+    <br>
 
-    <div class="contenedor-bloques">
-        <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p94.png" alt="Imagen p94" width="500px"/>
-        </div>
-        <div class="bloque-left" id="about">
+    <div class="bloque-con-texto">
+        
+
             <p class="texto-con-espaciado">
                 <br>
                 El proyecto se enfoca en la creación de un sistema de domótica inteligente con sensores y actuadores. Utilizando sensores 
@@ -176,17 +162,19 @@
                 H para controlar los motores de corriente continua, un motor DC para operar las persianas, un disipador de aire para 
                 simular el ventilador, cables de conexión, resistencias para el circuito, diodos LEDs como indicadores, una placa 
                 FPGA para programar los sistemas de control y una placa Protoboard para construir los circuitos necesarios.
-                <br><br>
             </p>
-        </div>
+
     </div> 
 
-    <br><br><br>
+    <br>
+    <div class="centrado">
+        <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p94.png" alt="Imagen p94" width="300px"/>
+    </div>
+    <br>
 
-    <div class="contenedor-bloques" id="carrera">
-        <div class="bloque-right">
+    <div class="bloque-con-texto" id="carrera">
+
             <p class="texto-con-espaciado">
-                <br>
                 El sensor de luz utiliza un convertidor analógico a digital (ADC) y dos comparadores para detectar niveles bajos y 
                 altos de luz en función de umbrales predefinidos. Los valores de umbral son aproximadamente 600 Lux para subir la 
                 persiana y 400 Lux para bajarla. Se utilizan biestables D y contadores para controlar la duración de la acción del 
@@ -203,40 +191,42 @@
                 Multisim, una herramienta de diseño de circuitos electrónicos de National Instruments, se empleó para simular y diseñar 
                 circuitos electrónicos antes de su implementación física, proporcionando una representación visual precisa del funcionamiento 
                 del proyecto.
-                <br><br>
             </p>
-        </div>
-        <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p95.png" alt="Imagen p95" height="400px"/>
+
+        <div class="centrado">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p95.png" alt="Imagen p95" width="300px"/>
         </div>
     </div>
 
-    <br><br><br>
 
-    <div class="contenedor-bloques">
-        <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p96.png" alt="Imagen p96" width="500px"/>
-        </div>
-        <div class="bloque-left" id="about">
+    <div class="bloque-con-texto">
+        
+
             <p class="texto-con-espaciado"> 
                 El desarrollo del software se dividió en fases y se diseñó un diagrama de flujo para tener un seguimiento de las 
                 distintas etapas del desarrollo del proyecto.
-                <br><br>
+                <br>
+            </p>
+            <p class="texto-con-espaciado">
+                <div class="centrado">
+                    <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p96.png" alt="Imagen p96" width="300px"/>
+                </div>
+                <br>
+            </p>
+            <p class="texto-con-espaciado">
                 Utilizando la librería de IP proporcionada por Vivado, se hizo uso de un convertidor analógico-digital "xadc_wizard" 
                 para convertir señales analógicas en digitales. Se implementó un comparador genérico de N bits para procesar las señales 
                 convertidas y determinar el comportamiento de los actuadores. También se creó un sistema de control que utiliza biestables 
                 tipo D y un contador para activar los actuadores durante un período de tiempo establecido.
-                <br><br>
             </p>
-        </div>
+
     </div>
 
-    <br><br><br>
+    <br>
 
-    <div class="contenedor-bloques" id="carrera">
-        <div class="bloque-right">
+    <div class="bloque-con-texto" id="carrera">
+
             <p class="texto-con-espaciado">
-                <br>
                 Una vez se han realizado todas las pruebas, simulaciones, tests y demás en el 
                 programa vivado y se han realizado las pruebas en placa, se procede como último paso 
                 del desarrollo del proyecto al diseño y construcción del prototipo.
@@ -247,80 +237,83 @@
                 “LED AMARILLO”, bajar_persiana <= “LED AZUL”). Además se han añadido dos diodos 
                 LEDS más a la maqueta: calidad_aire_buena <= “LED VERDE” y calidad_aire_mala <= 
                 “LED ROJO”.
-                <br><br>
+                <br>
+            </p>
+                <div class="centrado">
+                    <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p97.png" alt="Imagen p97" width="300px"/>
+                </div>
+                <br>
+            <p class="texto-con-espaciado">
                 En esta imagen siguiente imagen se muestra una fotografía del "prototipo persina" final construido. 
                 Por último os dejo un vídeo sobre los primeros tests en la placa FPGA realizados:
                 <br><br>
             </p>
-        </div>
-        <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p97.png" alt="Imagen p97" height="400px"/>
-        </div>
+
+        
     </div>
-
-    <br><br><br>
-
     <div class="centrado">
         <img id="miImagenYt"
             class="imagen-redondeada imagen-con-sombra cambiar-cursor" 
             src="../assets/p9/p99.png" 
             alt="Imagen p99" 
-            width="1000px"
+            width="300px"
             onmouseover="cambiarImagenYt('entrar')"
             onmouseout="cambiarImagenYt('salir')"              
             onclick="openLinkInNewTab('https://www.youtube.com/watch?v=hS6G02ygA4g')"
         />
     </div>
 
-    <br><br><br>
+    <br>
 
     <br><br>
     <hr>
-    <div class="contenedor-bloques lighter-black-bg" id="contacto">
-        <br><br>
-        <div class="bloque-right">
-            <h1><b>─── CONTACTO ───</b></h1>
-            <h3><b>Miguel Ángel Figuero</b></h3>
-            <p class="texto-con-espaciado">
-                correo: mafiguero2002@gmail.com
-            </p>
-
-            <div class="image-text-container">
-                <img 
-                    src="../assets/linkedin.png" 
-                    alt="Imagen linkedin" 
-                    width="20px"
-                    height="20px"
-                    onclick="redirectToLink('https://www.linkedin.com/in/miguel-%C3%A1ngel-figuero-vallejo-020468297/')"
-                    class="cambiar-cursor" 
-                />
-                <div class="sin-formato">
-                    <a target="_blank" href="https://www.linkedin.com/in/miguel-%C3%A1ngel-figuero-vallejo-020468297/"><p> @mafiguero</p></a>
-                </div>  
-            </div>
-            
-            <h2><span style="color:rgb(255, 255, 255)"><b>REFERENCIAS</b></span></h2>
-            <p>Mi universidad: <a target="_blank" href="https://www.etsisi.upm.es/">etsisi.upm.es</a>
-                <br>
-                Mi carrera:
-                <a target="_blank" href="https://www.etsisi.upm.es/estudios/grados/61ci/ig">Ingeniería de Computadores</a>   
-            </p>
-        </div>
-        <div class="bloque-left">
-            <div class="recuadro">
-                <a href="../CV.pdf" download>Descargar CV</a>
-            </div>
-
-            <p class="texto-con-espaciado">
-                Madrid, Comunidad de Madrid
-                <br><br>
-                
-                España
-                <br><br>
-                © Portfolio Mafiguero 2023
-            </p>
-        </div>
-        <br><br>
+    <div class="centrado" id="contacto">
+        <h2><b>── CONTACTO ──</b></h2>
     </div>
+    
+    <div class="bloque-con-texto">
+        <h3><b>Miguel Ángel Figuero</b></h3>
+        <p class="texto-con-espaciado">
+            correo: mafiguero2002@gmail.com
+        </p>
+
+        <div class="image-text-container">
+            <img 
+                src="../assets/linkedin.png" 
+                alt="Imagen linkedin" 
+                width="20px"
+                height="20px"
+                onclick="redirectToLink('https://www.linkedin.com/in/miguel-%C3%A1ngel-figuero-vallejo-020468297/')"
+                class="cambiar-cursor" 
+            />
+            <div class="sin-formato">
+                <a target="_blank" href="https://www.linkedin.com/in/miguel-%C3%A1ngel-figuero-vallejo-020468297/"><p> @mafiguero</p></a>
+            </div>  
+        </div>
+        
+        <h2><span style="color:rgb(255, 255, 255)"><b>REFERENCIAS</b></span></h2>
+        <p>Mi universidad: <a target="_blank" href="https://www.etsisi.upm.es/">etsisi.upm.es</a>
+            <br>
+            Mi carrera:
+            <a target="_blank" href="https://www.etsisi.upm.es/estudios/grados/61ci/ig">Ingeniería de Computadores</a>   
+        </p>
+
+
+        <div class="recuadro">
+            <a href="../CV.pdf" download>Descargar CV</a>
+        </div>
+
+        <p class="texto-con-espaciado">
+            Madrid, Comunidad de Madrid
+            <br><br>
+            
+            España
+            <br><br>
+            © Portfolio Mafiguero 2023
+        </p>
+    </div>
+
+    <br><br>
+
 </body>
 </html>

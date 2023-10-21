@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Mafiguero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <script>
+        
+        function cambiarImagenInicio(accion) {
+            var imagen = document.getElementById("miImagenInicio");
+            if (accion === 'entrar') { imagen.src = "../assets/inicio1.png"; } 
+            else { imagen.src = "../assets/inicio2.png"; }
+        }
+        function cambiarImagenAbout(accion) {
+            var imagen = document.getElementById("miImagenAbout");
+            if (accion === 'entrar') { imagen.src = "../assets/about1.png"; } 
+            else { imagen.src = "../assets/about2.png"; }
+        }
+        function cambiarImagenCarrera(accion) {
+            var imagen = document.getElementById("miImagenCarrera");
+            if (accion === 'entrar') { imagen.src = "../assets/carrera1.png"; } 
+            else { imagen.src = "../assets/carrera2.png"; }
+        }
+        function cambiarImagenProyectos(accion) {
+            var imagen = document.getElementById("miImagenProyectos");
+            if (accion === 'entrar') { imagen.src = "../assets/proyectos1.png"; } 
+            else { imagen.src = "../assets/proyectos2.png"; }
+        }
+        function cambiarImagenContacto(accion) {
+            var imagen = document.getElementById("miImagenContacto");
+            if (accion === 'entrar') { imagen.src = "../assets/contacto1.png"; } 
+            else { imagen.src = "../assets/contacto2.png"; }
+        }
+
+        function cambiarImagenBack(accion) {
+            var imagen = document.getElementById("miImagenBack");
+            if (accion === 'entrar') { imagen.src = "../assets/back1.png"; } 
+            else { imagen.src = "../assets/back2.png"; }
+        }
+        function cambiarImagenYt(accion) {
+            var imagen = document.getElementById("miImagenYt");
+            if (accion === 'entrar') { imagen.src = "../assets/p29.png"; } 
+            else { imagen.src = "../assets/p210.png"; }
+        }
+
+        function redirectToLink(link) {
+            window.location.href = link;
+        }
+        function openLinkInNewTab(link) {
+            window.open(link, '_blank');
+        }
+    </script>    
+</head>
+<body>    
+    <hr>
+    <br><div class="contenedor-imagenes centrado">
+        
+        <img id="miImagenInicio" 
+            src="../assets/inicio2.png" 
+            alt="Imagen Inicio" 
+            onmouseover="cambiarImagenInicio('entrar')"
+            onmouseout="cambiarImagenInicio('salir')" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#inicio')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenAbout" 
+            src="../assets/about2.png" 
+            alt="Imagen About" 
+            onmouseover="cambiarImagenAbout('entrar')"
+            onmouseout="cambiarImagenAbout('salir')" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#about')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenCarrera" 
+            src="../assets/carrera2.png" 
+            alt="Imagen About" 
+            onmouseover="cambiarImagenCarrera('entrar')"
+            onmouseout="cambiarImagenCarrera('salir')"  
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#carrera')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenProyectos" 
+            src="../assets/proyectos2.png" 
+            alt="Imagen Proyectos" 
+            onmouseover="cambiarImagenProyectos('entrar')"
+            onmouseout="cambiarImagenProyectos('salir')" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#proyectos')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <img id="miImagenContacto" 
+            src="../assets/contacto2.png" 
+            alt="Imagen Contacto" 
+            onmouseover="cambiarImagenContacto('entrar')"
+            onmouseout="cambiarImagenContacto('salir')" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#contacto')"
+            class="cambiar-cursor"
+        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+    <hr>
+
+
+    <div class="bloque-con-texto" id="carrera">
+            <br>
+            <h2><b>── SIMULACIÓN DE ATAQUE CON NS3 ──</b></h2>
+            <p class="texto-con-espaciado">
+                Este proyecto representó un reto académico en el contexto de la asignatura de 'Seguridad en Sistemas y Redes' de la universidad, 
+                propuesto por el profesorado. Fue altamente valorado tanto por los estudiantes como por los profesores y, en colaboración con 
+                otros desafíos presentados por mis compañeros de equipo, nos llevó a ganar el premio al equipo con la mayor cantidad de 
+                desafíos presentados y mejor valorados que el resto de equipos. Este reto, junto con el proyecto del cortafuegos, 
+                "Creación de un Malware" (disponibles en este portfolio) y otros desafíos que presenté, me llevó a lograr una calificación 
+                de matrícula de honor en dicha asignatura. 
+                <br><br>
+                En este reto se va a intentar simular un ataque Distribuido de Denegación de Servicio (DDoS) a una infraestructura. Con este 
+                objetivo en mente, se generará un gemelo en ns3 para mostrar el ataque diseñado. 
+                La intención es poder analizar lo que ocurre por dentro a la infraestructura cuando se está realizando el ataque: ver el tráfico 
+                que pasa por los routers, la saturación, como se le impide a los usuarios legítimos acceder, etc. 
+                <br><br>
+            </p>
+
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB/pB2.png" alt="Imagen pB2" height="180px"/>
+    </div>
+
+    <br>
+
+    <div class="bloque-con-texto">      
+            <p class="texto-con-espaciado">
+                En este caso hemos creado un gemelo que representa la infraestructura de la etsisi (https://www.etsisi.upm.es/). Este gemelo cuenta 
+                con un router que está conectado a un switch (representando una red grande con varios switches), y luego este switch se conecta con 
+                el router final que une con el servidor principal.
+                <br><br>
+                El usuario intentará acceder a la etsisi a través del router1, pero el hacker se lo impedirá utilizando una botnet de 20 dispositivos.
+                <br><br>
+                El primer paso para realiza la simulación de nuestro ataque es obtener la ip de la infraestructura que vamos a atacar, para lo que 
+                utilizamos el comando ping y nslookup. 
+                Además, con el comando ping podemos ver las velocidades de respuesta de los servidores de la etsisi, información que resultará 
+                importante posteriormente cuando hagamos el código de ns3.
+                <br><br>
+            </p>
+    </div>
+
+    <br>
+
+    <div class="bloque-con-texto">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB/pB3.png" alt="Imagen pB3" width="300px"/>
+
+            <p class="texto-con-espaciado">
+                La topología que diseñé se componía de 5 nodos:<br><br>
+                -n0. Es el usuario que quiere conectarse a la red. <br>
+                -n1. Es el router con el que se establece conexión.<br>
+                -n2. Es el switch de la red.<br>
+                -n3. Es el router final que se conecta al servidor.<br>
+                -n4. Es el servidor.<br><br>
+                Además, tenemos dos tipos de conexiones, pp1 (800 Mbps y un tiempo 
+                RTT) y pp2 (2 Mbps con un tiempo RTT de 20ms). Las conexiones entre 
+                el usuario y la red, así como la conexión del switch final con el servidor 
+                son del tipo pp1 y el resto de ellas son del tipo pp2. Cabe destacar que 
+                pp es el acrónimo de Peer To Peer.
+                <br><br>
+            </p>
+    </div> 
+
+    <br>
+
+    <div class="bloque-con-texto">       
+            <p class="texto-con-espaciado">
+                Tras recopilar los datos mencionados anteriormente, se realiza una primera versión del código de nuestro programa. 
+                A continuación, tras completar el código y corregirlo de posibles errores de sintaxis, se procede a la compilación del mismo, 
+                que generá un fichero “.xml” de simulación para cargar y poder observar los resultados en el programa NetAnim.
+                <br><br>
+            </p>
+    </div>
+
+    <br>
+
+    <div class="bloque-con-texto">
+      
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB/pB4.png" alt="Imagen pB4" height="300px"/>
+            <p class="texto-con-espaciado">
+                Primero el usuario que intenta acceder al servicio de la UPM manda un <br>
+                paquete de solicitud de conexión.
+                <br><br>
+            </p>
+
+
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB/pB5.png" alt="Imagen pB5" height="300px"/>
+            <p class="texto-con-espaciado">
+                Al cabo de un tiempo prolongado, como podemos observar el paquete <br>
+                de solicitud acaba llegando al servidor de la UPM (nodo 4).
+                <br><br>
+            </p>
+
+    </div>
+
+    <br>
+
+    <div class="bloque-con-texto">
+      
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB/pB6.png" alt="Imagen pB6" height="300px"/>
+            <p class="texto-con-espaciado">
+                Después de superar innumerables colisiones por culpa del tráfico <br>
+                generado por la botNet, el paquete de aceptación acaba llegando <br>
+                al usuario.
+                <br><br>
+            </p>
+
+
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB/pB7.png" alt="Imagen pB7" height="300px"/>
+            <p class="texto-con-espaciado">
+                Ahora el usuario, tras recibir el paquete de aceptación envía más <br>
+                paquetes con destino el servidor UPM.
+                <br><br>
+            </p>
+
+    </div>
+
+    <br>
+
+    <div class="bloque-con-texto">
+      
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB/pB8.png" alt="Imagen pB8" height="300px"/>
+            <p class="texto-con-espaciado">
+                Finalmente los paquetes del usuario no acaban llegando (por lo menos en el <br>
+                tiempo de simulación) al servidor debido al excesivo tráfico y la saturación <br>
+                de los buffers de los nodos. Podemos observar que el ataque se ha ejecutado <br>
+                correctamente y hemos conseguido la denegación del servicio al usuario.
+                <br><br>
+            </p>
+
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pB/pB9.png" alt="Imagen pB9" height="300px"/>
+            <p class="texto-con-espaciado">
+                En esta imagen proporcionada por el programa NetAnim se puede observar<br> 
+                gráficamente los paquetes generados por cada nodo y cómo se concentran en el nodo 1.
+                <br><br>
+            </p>
+
+    </div>
+
+    <br>
+    <hr>
+    <div class="centrado" id="contacto">
+        <h2><b>── CONTACTO ──</b></h2>
+    </div>
+    
+    <div class="bloque-con-texto">
+        <h3><b>Miguel Ángel Figuero</b></h3>
+        <p class="texto-con-espaciado">
+            correo: mafiguero2002@gmail.com
+        </p>
+
+        <div class="image-text-container">
+            <img 
+                src="../assets/linkedin.png" 
+                alt="Imagen linkedin" 
+                width="20px"
+                height="20px"
+                onclick="redirectToLink('https://www.linkedin.com/in/miguel-%C3%A1ngel-figuero-vallejo-020468297/')"
+                class="cambiar-cursor" 
+            />
+            <div class="sin-formato">
+                <a target="_blank" href="https://www.linkedin.com/in/miguel-%C3%A1ngel-figuero-vallejo-020468297/"><p> @mafiguero</p></a>
+            </div>  
+        </div>
+        
+        <h2><span style="color:rgb(255, 255, 255)"><b>REFERENCIAS</b></span></h2>
+        <p>Mi universidad: <a target="_blank" href="https://www.etsisi.upm.es/">etsisi.upm.es</a>
+            <br>
+            Mi carrera:
+            <a target="_blank" href="https://www.etsisi.upm.es/estudios/grados/61ci/ig">Ingeniería de Computadores</a>   
+        </p>
+
+
+        <div class="recuadro">
+            <a href="../CV.pdf" download>Descargar CV</a>
+        </div>
+
+        <p class="texto-con-espaciado">
+            Madrid, Comunidad de Madrid
+            <br><br>
+            
+            España
+            <br><br>
+            © Portfolio Mafiguero 2023
+        </p>
+    </div>
+
+    <br><br>
+
+</body>
+</html>

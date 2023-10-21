@@ -8,9 +8,6 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 
     <script>
-        if (window.innerWidth <= 768) {
-            window.location.href = "mobile.html";
-        }
         
         function cambiarImagenInicio(accion) {
             var imagen = document.getElementById("miImagenInicio");
@@ -63,83 +60,76 @@
     </script>    
 </head>
 <body>    
-    <br><br>
-    
-    <div class="derecha" class="contenedor-imagenes">
+    <hr>
+    <br><div class="contenedor-imagenes centrado">
         
         <img id="miImagenInicio" 
             src="../assets/inicio2.png" 
             alt="Imagen Inicio" 
             onmouseover="cambiarImagenInicio('entrar')"
-            onmouseout="cambiarImagenInicio('salir')"              
-            style="height: 25px;"
-            onclick="redirectToLink('../index.html#inicio')"
+            onmouseout="cambiarImagenInicio('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#inicio')"
             class="cambiar-cursor"
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
 
         <img id="miImagenAbout" 
             src="../assets/about2.png" 
             alt="Imagen About" 
             onmouseover="cambiarImagenAbout('entrar')"
-            onmouseout="cambiarImagenAbout('salir')"              
-            style="height: 25px;"
-            onclick="redirectToLink('../index.html#about')"
+            onmouseout="cambiarImagenAbout('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#about')"
             class="cambiar-cursor"
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
 
         <img id="miImagenCarrera" 
             src="../assets/carrera2.png" 
-            alt="Imagen Carrera" 
+            alt="Imagen About" 
             onmouseover="cambiarImagenCarrera('entrar')"
-            onmouseout="cambiarImagenCarrera('salir')"              
-            style="height: 25px;"
-            onclick="redirectToLink('../index.html#carrera')"
+            onmouseout="cambiarImagenCarrera('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#carrera')"
             class="cambiar-cursor"
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
 
         <img id="miImagenProyectos" 
             src="../assets/proyectos2.png" 
             alt="Imagen Proyectos" 
             onmouseover="cambiarImagenProyectos('entrar')"
-            onmouseout="cambiarImagenProyectos('salir')"              
-            style="height: 25px;"
-            onclick="redirectToLink('../index.html#proyectos')"
+            onmouseout="cambiarImagenProyectos('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#proyectos')"
             class="cambiar-cursor"
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
 
         <img id="miImagenContacto" 
             src="../assets/contacto2.png" 
             alt="Imagen Contacto" 
             onmouseover="cambiarImagenContacto('entrar')"
-            onmouseout="cambiarImagenContacto('salir')"              
-            style="height: 25px;"
-            onclick="redirectToLink('#contacto')"
+            onmouseout="cambiarImagenContacto('salir')" 
+            title="Clic para ir a Google" 
+            style="height: 10px;"
+            onclick="redirectToLink('../mobile.html#contacto')"
             class="cambiar-cursor"
         />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </div><br>
-
-    <div class="contenedor-fijo">
-        <img id="miImagenBack" 
-            src="../assets/back2.png" 
-            alt="Imagen Back" 
-            onmouseover="cambiarImagenBack('entrar')" 
-            onmouseout="cambiarImagenBack('salir')"              
-            style="width: 50px;"
-            title="Volver"
-            onclick="redirectToLink('../index.html#proyectos')"
-            class="cambiar-cursor" 
-        />
+        &nbsp;&nbsp;&nbsp;&nbsp;
     </div>
 
-    <div class="contenedor-bloques" id="carrera">
-        <div class="bloque-right">
-            <br>
-            <h1><b>─── MINIJUEGOS EN C ───</b></h1>
+    <hr>
+
+    <br>
+    <div class="bloque-con-texto">
+
+            <h2><b>── MINIJUEGOS EN C ──</b></h2>
             <p class="texto-con-espaciado">
                 Una de las asignaturas más difíciles de mi carrera para la inmensa mayoría de estudiantes, es “Fundamentos de Programación”. 
                 Sin embargo es una de las asignaturas que más horas le he dedicado en toda la carrera y que más he disfrutado y sigo disfrutando.  
@@ -154,23 +144,22 @@
                 De esta manera entiendo yo la programación y así es como he podido formarme como programador.
                 <br><br>
             </p>
-        </div>
-        <div class="bloque-left">
-            <br><br><br><br>
-            <img src="../assets/pA/pA3.png" alt="Imagen pA3" height="400px"/>
+
+        <div class="centrado">
+            <img src="../assets/pA/pA3.png" alt="Imagen pA3" width="300px"/>
         </div>
     </div>
 
     <br><br>
 
-    <div class="contenedor-bloques">
-        <div class="bloque-right">
-            <br><br>
-            <img src="../assets/pA/pA4.png" alt="Imagen pA4" width="500px"/>
-        </div>
-        <div class="bloque-left" id="about">
+    <div class="bloque-con-texto">
+        
+
             <p class="texto-con-espaciado">
-                <h1><b>─── JUEGO DEL DINOSAURIO ───</b></h1>
+                <h2><b>── JUEGO DEL DINOSAURIO ──</b></h2>
+                <div class="centrado">
+                    <img src="../assets/pA/pA4.png" alt="Imagen pA4" width="300px"/>
+                </div>
                 <br>
                 Tras mi primer suspenso en un examen de programación de dicha asignatura no me rendí, me gustaba la programación y sentía que las herramientas que me daban en 
                 clase eran insuficientes para poder remontar la asignatura, así que me busqué “mini-proyectos” por mí mismo que me 
@@ -184,13 +173,13 @@
                 la consola de windows. 
                 <br><br>
             </p>
-        </div>
+
     </div> 
 
-    <br><br><br>
+    <br>
 
-    <div class="contenedor-bloques" id="carrera">
-        <div class="bloque-right">
+    <div class="bloque-con-texto" id="carrera">
+
             <p class="texto-con-espaciado">
                 La aplicación ofrece un menú con diversas opciones, incluyendo la capacidad de personalizar el icono que se utilizará para 
                 superar los obstáculos que aparezcan (cualquier carácter del código ASCII), así como la opción de personalizar el carácter 
@@ -200,21 +189,20 @@
                 y el activar o desactivar el modo desarrollador para ver en tiempo real todos los frames, muy útil para detectar errores o 
                 bugs durante la programación del minijuego.
             </p>
-        </div>
-        <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA5.png" alt="Imagen pA5" height="250px"/>
+
+        <div class="centrado">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA5.png" alt="Imagen pA5" width="300px"/>
         </div>
     </div>
 
-    <br><br><br>
+    <br>
 
-    <div class="contenedor-bloques">
-        <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA6.png" alt="Imagen pA6" width="500px"/>
+    <div class="bloque-con-texto">
+        <div class="centrado">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA6.png" alt="Imagen pA6" width="300px"/>
         </div>
-        <div class="bloque-left" id="about">
+
             <p class="texto-con-espaciado">
-                <br>
                 La dinámica del programa se basa en un sistema de tiempo real que cada cierto tiempo (dependiendo de la velocidad actual de la cinta), 
                 comprueba si el jugador ha pulsado alguna tecla como el espacio (saltar) o escape:
                 <br><br>
@@ -226,13 +214,13 @@
                 ha sido eliminado por un obstáculo) y se imprime el nuevo escenario.
                 <br><br>
             </p>
-        </div>
+
     </div> 
 
-    <br><br><br>
+    <br>
 
-    <div class="contenedor-bloques">
-        <div class="bloque-right">       
+    <div class="bloque-con-texto">
+     
             <p class="texto-con-espaciado">
                 La cinta consta de una matriz de 2 dimensiones que se compone de 2 arrays de caracteres que representan el escenario. Esta 
                 matriz se va desplazando un carácter a la izquierda según va avanzando la cinta a la vez que se van generando nuevos obstáculos 
@@ -249,13 +237,13 @@
                 Os dejo un vídeo (enlace a youtube desde la imagen) que he realizado para enseñaros una pequeña demostración del funcionamiento del minijuego.
                 <br><br>
             </p>
-        </div>
-        <div class="bloque-left">
+
+        <div class="centrado">
             <img id="miImagenYt2"
                 class="imagen-redondeada imagen-con-sombra cambiar-cursor" 
                 src="../assets/pA/pA8.png" 
                 alt="Imagen pA8" 
-                width="600px"
+                width="300px"
                 onmouseover="cambiarImagenYt2('entrar')"
                 onmouseout="cambiarImagenYt2('salir')"              
                 onclick="openLinkInNewTab('https://www.youtube.com/watch?v=no8lgSU2JQg')"
@@ -263,14 +251,13 @@
         </div>
     </div>
 
-    <br><br>
+    <br>
     <hr>
-    <br><br>
+    <br>
 
-    <div class="contenedor-bloques" id="carrera">
-        <div class="bloque-right">
-            <br>
-            <h1><b>─── WORDLE DE MAF ───</b></h1>
+    <div class="bloque-con-texto" id="carrera">
+
+            <h2><b>── WORDLE DE MAF ──</b></h2>
             <p class="texto-con-espaciado">
                 Otro gran proyecto de programación y todo un reto, fue replicar el famoso juego de “wordle”. Todo comenzó cuando me apasioné 
                 por este pasatiempo, pero el único problema que enfrenté fue la restricción de poder jugar solo una palabra al día. Motivado 
@@ -285,20 +272,19 @@
                 muy cómodo y fácil a la vez.
                 <br><br>
             </p>
-        </div>
-        <div class="bloque-left">
-            <br><br><br><br>
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA10.png" alt="Imagen pA10" height="400px"/>
+
+        <div class="centrado">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA10.png" alt="Imagen pA10" width="300px"/>
         </div>
     </div>
 
-    <br><br><br>
+    <br>
 
-    <div class="contenedor-bloques">
-        <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA9.png" alt="Imagen pA9" width="500px"/>
+    <div class="bloque-con-texto">
+        <div class="centrado">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA9.png" alt="Imagen pA9" width="300px"/>
         </div>
-        <div class="bloque-left" id="about">
+
             <p class="texto-con-espaciado">
                 <br>
                 Tras conseguir un fichero con todas las palabras del diccionario con 5 letras, creé el programa con la siguiente interfaz:
@@ -320,87 +306,86 @@
                 Así como detectar errores o bugs durante la programación.
                 <br><br>
             </p>
-        </div>
+
     </div> 
 
-    <br><br><br>
+    <br>
 
-    <div class="contenedor-bloques">
-        <div class="bloque-right">       
+    <div class="bloque-con-texto">
+      
             <p class="texto-con-espaciado">
                 Como en el anterior minijuego, os dejo un vídeo (enlace a youtube desde la imagen) que he realizado para enseñaros una pequeña 
                 demostración del funcionamiento de todos estos modos mencionados anteriormente sobre mi aplicación.   
                 <br><br>
             </p>
-        </div>
-        <div class="bloque-left">
-            
-        </div>
+
+
     </div>
 
-    <br><br><br>
+    <br>
 
     <div class="centrado">
         <img id="miImagenYt3"
             class="imagen-redondeada imagen-con-sombra cambiar-cursor" 
             src="../assets/pA/pA12.png" 
             alt="Imagen pA12" 
-            width="1000px"
+            width="300px"
             onmouseover="cambiarImagenYt3('entrar')"
             onmouseout="cambiarImagenYt3('salir')"              
             onclick="openLinkInNewTab('https://www.youtube.com/watch?v=cOOKs-6EX70')"
         />
     </div>
 
-    <br><br><br>
+
+    <br>
+    <hr>
+    <div class="centrado" id="contacto">
+        <h2><b>── CONTACTO ──</b></h2>
+    </div>
+    
+    <div class="bloque-con-texto">
+        <h3><b>Miguel Ángel Figuero</b></h3>
+        <p class="texto-con-espaciado">
+            correo: mafiguero2002@gmail.com
+        </p>
+
+        <div class="image-text-container">
+            <img 
+                src="../assets/linkedin.png" 
+                alt="Imagen linkedin" 
+                width="20px"
+                height="20px"
+                onclick="redirectToLink('https://www.linkedin.com/in/miguel-%C3%A1ngel-figuero-vallejo-020468297/')"
+                class="cambiar-cursor" 
+            />
+            <div class="sin-formato">
+                <a target="_blank" href="https://www.linkedin.com/in/miguel-%C3%A1ngel-figuero-vallejo-020468297/"><p> @mafiguero</p></a>
+            </div>  
+        </div>
+        
+        <h2><span style="color:rgb(255, 255, 255)"><b>REFERENCIAS</b></span></h2>
+        <p>Mi universidad: <a target="_blank" href="https://www.etsisi.upm.es/">etsisi.upm.es</a>
+            <br>
+            Mi carrera:
+            <a target="_blank" href="https://www.etsisi.upm.es/estudios/grados/61ci/ig">Ingeniería de Computadores</a>   
+        </p>
+
+
+        <div class="recuadro">
+            <a href="../CV.pdf" download>Descargar CV</a>
+        </div>
+
+        <p class="texto-con-espaciado">
+            Madrid, Comunidad de Madrid
+            <br><br>
+            
+            España
+            <br><br>
+            © Portfolio Mafiguero 2023
+        </p>
+    </div>
 
     <br><br>
-    <hr>
-    <div class="contenedor-bloques lighter-black-bg" id="contacto">
-        <br><br>
-        <div class="bloque-right">
-            <h1><b>─── CONTACTO ───</b></h1>
-            <h3><b>Miguel Ángel Figuero</b></h3>
-            <p class="texto-con-espaciado">
-                correo: mafiguero2002@gmail.com
-            </p>
 
-            <div class="image-text-container">
-                <img 
-                    src="../assets/linkedin.png" 
-                    alt="Imagen linkedin" 
-                    width="20px"
-                    height="20px"
-                    onclick="redirectToLink('https://www.linkedin.com/in/miguel-%C3%A1ngel-figuero-vallejo-020468297/')"
-                    class="cambiar-cursor" 
-                />
-                <div class="sin-formato">
-                    <a target="_blank" href="https://www.linkedin.com/in/miguel-%C3%A1ngel-figuero-vallejo-020468297/"><p> @mafiguero</p></a>
-                </div>  
-            </div>
-            
-            <h2><span style="color:rgb(255, 255, 255)"><b>REFERENCIAS</b></span></h2>
-            <p>Mi universidad: <a target="_blank" href="https://www.etsisi.upm.es/">etsisi.upm.es</a>
-                <br>
-                Mi carrera:
-                <a target="_blank" href="https://www.etsisi.upm.es/estudios/grados/61ci/ig">Ingeniería de Computadores</a>   
-            </p>
-        </div>
-        <div class="bloque-left">
-            <div class="recuadro">
-                <a href="../CV.pdf" download>Descargar CV</a>
-            </div>
-
-            <p class="texto-con-espaciado">
-                Madrid, Comunidad de Madrid
-                <br><br>
-                
-                España
-                <br><br>
-                © Portfolio Mafiguero 2023
-            </p>
-        </div>
-        <br><br>
-    </div>
 </body>
 </html>

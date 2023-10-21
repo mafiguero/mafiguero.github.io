@@ -121,8 +121,7 @@
 
     <hr>
 
-    <div class="bloque-con-texto" id="carrera">
-
+    <div class="bloque-con-texto">
             <h2><b>── R6 TRACKER ──</b></h2>
             <p class="texto-con-espaciado">
                 Desarrollé R6 Tracker en respuesta a la necesidad de una aplicación fiable capaz de identificar a todos 
@@ -136,55 +135,59 @@
                 Elegí C porque lo conozco bien, 
                 y como no tenía tiempo para hacer una interfaz gráfica profesional, decidí usar la consola de Windows y unas librerías para 
                 darle color y mejorar un poco el aspecto.
-                <br><br>
             </p>
-
-        <div class="centrado">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p1/p12.png" alt="Imagen r6tracker" width="300px"/>
-        </div>
     </div>
 
     <br>
+    <div class="centrado">
+        <img class="imagen-redondeada imagen-con-sombra" src="../assets/p1/p12.png" alt="Imagen r6tracker" width="300px"/>
+    </div>
+    <br>
 
     <div class="bloque-con-texto">
+        <p class="texto-con-espaciado">
+            Primero busqué la manera de llevarlo a cabo y me di cuenta con el "Track Folder Changes" de que el juego, en cuanto empezaba una 
+            partida, lanzaba los avatares de todos los jugadores y sus IDs en una carpeta. Con eso pude hacer mi primer programa que periódicamente 
+            revisaba dicha carpeta en busca de nuevos archivos y cuando detectaba nuevos jugadores obtenía sus ids y los guardaba en un .txt 
+            que posteriormente se imprimía por la consola de mi programa.
+        </p>
+
+        <br>
         <div class="centrado">
             <img src="../assets/p1/p13.png" alt="Imagen r6tracker-esquema" width="300px"/>
         </div>
+        <br>
 
-            <p class="texto-con-espaciado">
-                Primero busqué la manera de llevarlo a cabo y me di cuenta con el "Track Folder Changes" de que el juego, en cuanto empezaba una 
-                partida, lanzaba los avatares de todos los jugadores y sus IDs en una carpeta. Con eso pude hacer mi primer programa que periódicamente 
-                revisaba dicha carpeta en busca de nuevos archivos y cuando detectaba nuevos jugadores obtenía sus ids y los guardaba en un .txt 
-                que posteriormente se imprimía por la consola de mi programa.
-                <br><br>
-                Mi siguiente paso consistía en planificar cómo proceder una vez tenía a mi disposición los ids de cada jugador detectado, 
-                con el objetivo de obtener sus respectivas estadísticas. Para ello, era necesario emplear un servicio de seguimiento 
-                específico para el videojuego, como "r6.tracker.network," y realizar una técnica de web scraping. Sin apenas conocimiento 
-                sobre web scraping en c, decidí utilizar la herramienta wget para obtener la ficha .html del jugador que se iba a trackear 
-                para posteriormente scrapear los datos que se iban a imprimir.
-                <br><br>
-            </p>
-
+        <p class="texto-con-espaciado">
+            Mi siguiente paso consistía en planificar cómo proceder una vez tenía a mi disposición los ids de cada jugador detectado, 
+            con el objetivo de obtener sus respectivas estadísticas. Para ello, era necesario emplear un servicio de seguimiento 
+            específico para el videojuego, como "r6.tracker.network," y realizar una técnica de web scraping. Sin apenas conocimiento 
+            sobre web scraping en c, decidí utilizar la herramienta wget para obtener la ficha .html del jugador que se iba a trackear 
+            para posteriormente scrapear los datos que se iban a imprimir.
+        </p>
     </div> 
 
     <br>
 
     <div class="bloque-con-texto" id="carrera">
 
-            <p class="texto-con-espaciado">
-                Una vez disponía de todas las herramientas que necesitaba para hacer mi programa y de una planificación de cómo llevarlo a cabo, 
-                me dispuse a programarlo. Creé una struct "jugador" que contenía todos los datos que se iban a scrappear y posteriormente imprimir. 
-                Implementé una función para obtener cada dato de un jugador así como todas las funciones para imprimir los datos. Estas 
-                funciones fueron sin duda las más complicadas de llevar a cabo. 
-                <br><br>
-                Finalmente agregué algunas funcionalidades más a mi programa como poder 
-                agregar amigos, o buscar estadísticas de un jugador en concreto escribiendo su Nick por teclado.
-                <br><br>
-            </p>
+        <p class="texto-con-espaciado">
+            Una vez disponía de todas las herramientas que necesitaba para hacer mi programa y de una planificación de cómo llevarlo a cabo, 
+            me dispuse a programarlo. Creé una struct "jugador" que contenía todos los datos que se iban a scrappear y posteriormente imprimir. 
+            Implementé una función para obtener cada dato de un jugador así como todas las funciones para imprimir los datos. Estas 
+            funciones fueron sin duda las más complicadas de llevar a cabo. 
+        </p>
 
+        <br>
         <div class="centrado">
             <img class="imagen-redondeada imagen-con-sombra" src="../assets/p1/p14.png" alt="Imagen r6tracker" width="300px"/>
         </div>
+        <br>
+
+        <p class="texto-con-espaciado">
+            Finalmente agregué algunas funcionalidades más a mi programa como poder 
+            agregar amigos, o buscar estadísticas de un jugador en concreto escribiendo su Nick por teclado.
+        </p>
     </div>
 
     <br>
@@ -193,7 +196,7 @@
         <img class="imagen-redondeada imagen-con-sombra" src="../assets/p1/p15.png" alt="Imagen r6tracker2" width="300px"/>
     </div>
 
-    <br>
+    <br><br>
     <hr>
     <div class="centrado" id="contacto">
         <h2><b>── CONTACTO ──</b></h2>

@@ -133,18 +133,24 @@
 
     <br><br><br>
 
-    <div class="contenedor-bloques" id="carrera">
+    <div class="contenedor-bloques">
         <div class="bloque-right">
             <h1><b>─── DRAGONES & CAVERNAS ───</b></h1>
             <p class="texto-con-espaciado">
-                PRÓXIMAMENTE ...
+                Este proyecto se lleva a cabo en el contexto de la asignatura Bases de Datos. El objetivo de esta práctica fue desarrollar una 
+                base de datos para un videojuego  por completo. Desde su diseño y modelización acorde a las especificaciones de la empresa que 
+                nos demanda, su creación en SQL y simulación utilizando contenedores de docker, así como su implementación en java.
                 <br><br>
-                
+                Este proyecto se divide en 3 grandes Hitos relacionados con lo comentado anteriormente. En el primer hito del proyecto fue 
+                diseñar una base de datos para el videojuego "Dragones & Cavernas", lo más profesional posible, haciendo uso del modelo E-R (Entidad - Relación). 
+                Para ello puse un gran empeño 
+                junto con mis compañeros de equipo para lograr un buen modelo que cubra todas las especificaciones y requisitos que la empresa 
+                de videojuegos nos pedía. 
                 <br><br>
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p4/p42.png" alt="Imagen p" height="400px"/>
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p4/p42.png" alt="Imagen p42" width="500px"/>
         </div>
     </div>
 
@@ -152,17 +158,70 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img src="../assets/p4/p42.png" alt="Imagen p" width="500px"/>
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p4/p43.png" alt="Imagen p43" width="600px"/>
         </div>
-        <div class="bloque-left" id="about">
+        <div class="bloque-left">
             <p class="texto-con-espaciado">
-                
+                El juego consistía en un MORPG con múltiples operaciones simultáneas, donde los jugadores pueden crear personajes personalizados 
+                con roles, adquirir armas, y participar en misiones individuales y colectivas.
                 <br><br>
-
+                El sistema incluía ciudades, personajes, armas, habilidades, pociones, enemigos y misiones. Mi tarea en este hito fue establecer 
+                la estructura de la base de datos para acomodar todos estos elementos, haciendo una bases de datos mantenible, duradera y 
+                abierta a posibles expansiones. Para la modelización se usó la herramienta <a target="_blank" href="https://app.diagrams.net/"><b>draw.io</b></a>
                 <br><br>
             </p>
         </div>
-    </div> 
+    </div>
+
+    <br><br><br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">
+            <p class="texto-con-espaciado">
+                En el segundo hito de este proyecto, me centré en la creación y explotación de la base de datos que respaldará el videojuego 
+                "Dragones & Cavernas." Las principales tareas abordadas en este hito incluyeron la conversión del modelo entidad-relación en 
+                tablas reales (paso a tablas), la definición de instrucciones SQL para crear las tablas con atención a la integridad referencial, 
+                la resolución de consultas SQL, la implementación de funciones, procedimientos y triggers, y la incorporación de datos de 
+                ejemplo para verificar la funcionalidad de la base de datos.
+                <br><br>
+                Para la creación de tablas SQL, así como la implementación de funciones, procedimientos y triggers, se hizo uso de la 
+                herramienta gratuita MySQL WorkBench. Para su posterior simulación, montando toda la base de datos, se utilizó la herramienta 
+                de contenedores de docker.
+                <br><br>
+                Este hito es un paso esencial para llevar a cabo la gestión y operación de la base de datos en el contexto del juego.
+                <br><br>
+            </p>
+        </div>
+        <div class="bloque-left">
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p4/p44.png" alt="Imagen p44" width="500px"/>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="contenedor-bloques">
+        <div class="bloque-right">
+            <p class="texto-con-espaciado">
+                En el tercer y último hito del proyecto, se abordó la programación (java) que permitiría la interacción con la base de datos generada en el hito 2. Esto se realizó desde dos perspectivas diferentes: utilizando JDBC (Java Database Connectivity) y el ORM Hibernate.
+                <br><br>
+                <b>JDBC:</b>
+                <br>
+                <br>- Se implementaron cuatro métodos que se conectaban a la base de datos a través de MySQL Connector/J 8.0.
+                <br>- Estos métodos posibilitaron la inserción de un nuevo dragón, la obtención de una lista de dragones derrotados por un escuadrón específico, la recuperación de hachas disponibles en una forja específica y la identificación de la espada que porta un guerrero.
+                <br>- Estas tareas se llevaron a cabo en un proyecto Maven en IntelliJ, con Docker configurado para el servidor MySQL, y se crearon las clases Java necesarias.
+                <br><br>
+                <b>Hibernate:</b>
+                <br>
+                <br>- Se utilizó Hibernate para interactuar con la base de datos.
+                <br>- Se crearon clases Java correspondientes a las entidades del modelo Entidad-Relación del hito 1, y se configuró un archivo hibernate.cfg.xml para la conexión a una nueva base de datos.
+                <br>- Se implementaron las clases para crear un mago y asignarle una "Daga de Madera" como arma predeterminada.
+                <br>- Estas dos perspectivas permitieron programar la interacción con la base de datos de acuerdo con las tareas definidas en el hito 3, utilizando JDBC y Hibernate según fuera necesario.
+            </p>
+        </div>
+        <div class="bloque-left">
+            
+        </div>
+    </div>
 
     <br><br>
     <hr>

@@ -121,17 +121,20 @@
 
     <hr>
 
-    <br><br><br>
+    <br>
 
-    <div class="bloque-con-texto" id="carrera">
+    <div class="bloque-con-texto">
 
-            <h2><b>── CORTAFUEGOS ──</b></h2>
-            <p class="texto-con-espaciado">
-                PRÓXIMAMENTE ...
-                <br><br>
-                
-                <br><br>
-            </p>
+        <h2><b>── CORTAFUEGOS ──</b></h2>
+        <p class="texto-con-espaciado">
+            Este proyecto representó un reto académico en el contexto de la asignatura de 'Seguridad en Sistemas y Redes' de la 
+            universidad, propuesto por el profesorado. Este reto, junto con el proyecto “Simulacion de un ataque con NS3”, "Creación 
+            de un Malware" (disponibles en este portfolio) y otros desafíos que presenté, me llevó a lograr una calificación de 
+            matrícula de honor en dicha asignatura.
+            <br><br>
+            El proyecto se centra en la implementación de un sistema de cortafuegos en una red simulada con máquinas virtuales, 
+            con el objetivo de aplicar políticas restrictivas de seguridad. Para comprender y aplicar estas políticas, el proyecto 
+        </p>
 
         <div class="centrado">
             <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p72.png" alt="Imagen p" width="300px"/>
@@ -141,20 +144,132 @@
     <br>
 
     <div class="bloque-con-texto">
-        <div class="centrado">
-            <img src="../assets/p7/p72.png" alt="Imagen p" width="300px"/>
-        </div>
-
+        
+            <h3><b>Etapa 1: Simulación de una Red Empresarial</b></h3>
             <p class="texto-con-espaciado">
-                
-                <br><br>
+                Antes de comenzar el verdadero proyecto se realizó en Cisco Packet Tracer una simulacion de una red empresarial. Esta etapa me permitió 
+                entender la topología de la red, 
+                las políticas restrictivas y la función de los cortafuegos. Se construyó una red con máquinas virtuales y se activó un 
+                servicio HTTP en una de las máquinas (en concreto la de Windows 10).
+            </p>
+    </div>
 
-                <br><br>
+    <br>
+    <div class="centrado">
+        <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p73.png" alt="Imagen p73" width="300px"/>
+    </div>
+    <br>
+
+    <div class="bloque-con-texto">
+            <h3><b>Etapa 2: Configuración del Servicio HTTP</b></h3>
+            <p class="texto-con-espaciado">
+                En esta fase, se configuró el servicio HTTP (servidor web) en la máquina Windows 10 utilizando Xampp. Se prestaron especial atención al 
+                panel de control de Xampp y al archivo de configuración httpd.conf. Se modificó la configuración inicial para habilitar 
+                el acceso al servidor HTTP. También se creó un pequeño documento .html con el diseño para la web del servidor.
+            </p>
+        <div class="centrado"> 
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p74.png" alt="Imagen p74" width="300px"/>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="bloque-con-texto">
+            <h3><b>Etapa 3: Pruebas Iniciales</b></h3>
+            <p class="texto-con-espaciado">
+                Se realizaron pruebas de conectividad para verificar que los diferentes tipos de tráfico (ping e HTTP) fueran 
+                permitidos o bloqueados según la política de seguridad establecida. Se registraron los resultados de las pruebas.
             </p>
 
-    </div> 
+    </div>
 
-    <br><br>
+    <br>
+    <div class="centrado">
+        <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p75.png" alt="Imagen p75" width="300px"/>
+    </div>
+    <br>
+
+    <div class="bloque-con-texto">
+
+            <h3><b>Etapa 4: Creación del Script del Cortafuegos</b></h3>
+            <p class="texto-con-espaciado">
+                Se creó un script que implementaba una política de seguridad restrictiva, que sería instalado en la maquina 
+                virtual de kali, que como se puede observar en la imagen anterior está actuando como cortafuegos. El script utilizó iptables 
+                y estableció reglas para permitir o bloquear el tráfico según las necesidades. Se tuvo en cuenta el 
+                forwarding de paquetes, la limpieza de reglas previas y la sintaxis de las reglas de iptables.
+            </p>
+
+        <div class="centrado"> 
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p76.png" alt="Imagen p76" width="300px"/>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="bloque-con-texto">
+            <h3><b>Etapa 5: Administración Remota a través de SSH</b></h3>
+            <p class="texto-con-espaciado">
+                Se configuró la administración remota utilizando el protocolo SSH. Se realizaron ajustes en el 
+                servidor SSH (Máquina Virtual de Kali), se habilitó el acceso root y se configuró el cortafuegos para permitir el tráfico 
+                SSH entre el cliente y el servidor. Se utilizó la utilidad PuTTY para la administración desde un cliente Windows (Máquina Virtual de Windows XP).
+
+            </p>
+
+    </div>
+
+    <br>
+    <div class="centrado">
+        <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p77.png" alt="Imagen p77" width="300px"/>
+    </div>
+    <br>
+
+    <div class="bloque-con-texto">
+
+            <h3><b>Etapa 6: Implementación de Cortafuegos Pfsense</b></h3>
+            <p class="texto-con-espaciado">
+                Se instaló una máquina virtual pfSense en VirtualBox y se configuró la red según fue necesario. 
+                Se llevaron a cabo pruebas de conectividad y se accedió a la consola web de pfSense. Se implementó una 
+                política de seguridad en las interfaces DMZ y LAN de pfSense, asegurando que se cumplieran las políticas 
+                restrictivas y registrando los intentos de acceso no permitidos.
+                <br>
+            </p>
+
+        <div class="centrado"> 
+            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p78.png" alt="Imagen p78" width="300px"/>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="bloque-con-texto">
+            <h3><b>Etapa 7: Monitorización</b></h3>
+            <p class="texto-con-espaciado">
+                Por último se accedió a la funcionalidad de monitorización de pfSense para visualizar los registros de eventos. 
+                Se configuraron ajustes específicos, como la presentación en formato cola y la exclusión de registros 
+                asociados a las reglas por defecto. Esto permitió analizar los resultados de las pruebas y los registros 
+                de eventos del cortafuegos.
+            </p>
+    </div>
+    <br>
+    <div class="centrado">
+        <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p79.png" alt="Imagen p79" width="300px"/>
+    </div>
+
+    <br>
+
+    <div class="bloque-con-texto">
+
+            <p class="texto-con-espaciado">
+                En resumen, este proyecto abarcó la simulación de una red empresarial, la configuración de servicios, la 
+                implementación de políticas restrictivas con iptables, la administración remota a través de SSH y la 
+                configuración de un cortafuegos dedicado con pfSense. Es uno de los proyectos con los que más he podido 
+                aprender sobre seguridad y redes.
+            </p>
+
+    </div>
+
+    <br><br> 
+
     <hr>
     <div class="centrado" id="contacto">
         <h2><b>── CONTACTO ──</b></h2>

@@ -164,8 +164,8 @@
             <img src="../assets/p2/p24.png" alt="Imagen p24" width="600px"/>
         </div>
         <div class="bloque-left" id="about">
-            <p class="texto-con-espaciado">
-                <h3><p><b>Este proyecto se divide en tres partes:</b></p></h3>
+            <h3><p><b>Este proyecto se divide en tres partes:</b></p></h3>
+            <p class="texto-con-espaciado">  
                 Una primera parte donde el usuario toma fotografías a las caras del cubo de Rubik una vez revuelto. Dichas imágenes son procesadas 
                 por un programa en Python que reconoce los colores de las piezas que forman la cara y devuelve por cada imagen, en forma de 
                 fichero, una matriz 3x3 que contiene los colores de la cara correspondiente. 
@@ -186,10 +186,10 @@
 
     <br><br><br>
 
-    <div class="contenedor-bloques" id="carrera">
+    <div class="contenedor-bloques">
         <div class="bloque-right">
+            <h3><p><b>─── 1. TRATAMIENTO DE IMÁGENES ───</b></p></h3>
             <p class="texto-con-espaciado">
-                <h3><p><b>─── 1. TRATAMIENTO DE IMÁGENES ───</b></p></h3>
                 Para el tratamiento de imágenes fue necesario programar en Python un proceso que detectase los colores de las piezas que 
                 formaban una cara y devolviese, por cada cara, un fichero con una matriz 3x3 con los colores de dicha cara. 
                 <br><br>
@@ -209,9 +209,9 @@
         <div class="bloque-right">
             <img class="imagen-redondeada imagen-con-sombra" src="../assets/p2/p26.png" alt="Imagen p26" width="600px"/>
         </div>
-        <div class="bloque-left" id="about">
+        <div class="bloque-left">
+            <h3><p><b>─── 2. ALGORITMO ───</b></p></h3>
             <p class="texto-con-espaciado">
-                <h3><p><b>─── 2. ALGORITMO ───</b></p></h3>
                 La segunda parte del proyecto corresponde con el programa encargado del “algoritmo de resolución”. Este tomará los 
                 ficheros devueltos por el programa de Python y cargará en memoria una matriz 3D [6][3][3] (6 matrices 3x3) una por 
                 cada color, correspondiente a cada una de las caras del cubo. Una vez cargada, se llamará al algoritmo que calculará 
@@ -225,7 +225,7 @@
 
     <br><br><br><br>
 
-    <div class="contenedor-bloques" id="carrera">
+    <div class="contenedor-bloques">
         <div class="bloque-right">
             <p class="texto-con-espaciado">
                 El algoritmo lo desarrollé por completo en lenguaje C utilizando librerías estándar. La única librería externa 

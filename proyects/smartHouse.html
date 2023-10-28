@@ -11,7 +11,13 @@
         if (window.innerWidth <= 768) {
             window.location.href = "mobile.html";
         }
-        
+        var ancho = window.innerWidth / 3;
+        window.onload = function() {
+            var imagenes = document.querySelectorAll('.ajustar-ancho');
+            imagenes.forEach(function(imagen) {
+                imagen.width = ancho;
+            });
+        };
         function cambiarImagenInicio(accion) {
             var imagen = document.getElementById("miImagenInicio");
             if (accion === 'entrar') { imagen.src = "../assets/inicio1.png"; } 
@@ -151,7 +157,7 @@
         </div>
         <div class="bloque-left">
             <br><br><br><br>
-            <img class="imagen-con-sombra" src="../assets/p9/p93.png" alt="Imagen p93" height="400px"/>
+            <img class="imagen-con-sombra ajustar-ancho" src="../assets/p9/p93.png" alt="Imagen p93"/>
         </div>
     </div>
 
@@ -159,7 +165,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p94.png" alt="Imagen p94" width="500px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p9/p94.png" alt="Imagen p94"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
@@ -207,7 +213,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p95.png" alt="Imagen p95" height="400px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p9/p95.png" alt="Imagen p95"/>
         </div>
     </div>
 
@@ -215,7 +221,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p96.png" alt="Imagen p96" width="500px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p9/p96.png" alt="Imagen p96"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado"> 
@@ -254,7 +260,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p9/p97.png" alt="Imagen p97" height="400px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p9/p97.png" alt="Imagen p97"/>
         </div>
     </div>
 

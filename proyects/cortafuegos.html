@@ -11,7 +11,13 @@
         if (window.innerWidth <= 768) {
             window.location.href = "mobile.html";
         }
-        
+        var ancho = window.innerWidth / 3;
+        window.onload = function() {
+            var imagenes = document.querySelectorAll('.ajustar-ancho');
+            imagenes.forEach(function(imagen) {
+                imagen.width = ancho;
+            });
+        };
         function cambiarImagenInicio(accion) {
             var imagen = document.getElementById("miImagenInicio");
             if (accion === 'entrar') { imagen.src = "../assets/inicio1.png"; } 
@@ -149,7 +155,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p72.png" alt="Imagen p" height="400px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p7/p72.png" alt="Imagen p72"/>
         </div>
     </div>
 
@@ -157,7 +163,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p73.png" alt="Imagen p73" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p7/p73.png" alt="Imagen p73"/>
         </div>
         <div class="bloque-left">
             <h2><b>Etapa 1: Simulación de una Red Empresarial</b></h2>
@@ -184,7 +190,7 @@
             </p>
         </div>
         <div class="bloque-left"> 
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p74.png" alt="Imagen p74" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p7/p74.png" alt="Imagen p74"/>
         </div>
     </div>
 
@@ -192,7 +198,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p75.png" alt="Imagen p75" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p7/p75.png" alt="Imagen p75"/>
         </div>
         <div class="bloque-left">
             <h2><b>Etapa 3: Pruebas Iniciales</b></h2>
@@ -218,7 +224,7 @@
             </p>
         </div>
         <div class="bloque-left"> 
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p76.png" alt="Imagen p76" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p7/p76.png" alt="Imagen p76"/>
         </div>
     </div>
 
@@ -226,7 +232,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p77.png" alt="Imagen p77" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p7/p77.png" alt="Imagen p77"/>
         </div>
         <div class="bloque-left">
             <h2><b>Etapa 5: Administración Remota a través de SSH</b></h2>
@@ -253,7 +259,7 @@
             </p>
         </div>
         <div class="bloque-left"> 
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p78.png" alt="Imagen p78" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p7/p78.png" alt="Imagen p78"/>
         </div>
     </div>
 
@@ -261,7 +267,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p7/p79.png" alt="Imagen p79" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p7/p79.png" alt="Imagen p79"/>
         </div>
         <div class="bloque-left">
             <h2><b>Etapa 7: Monitorización</b></h2>

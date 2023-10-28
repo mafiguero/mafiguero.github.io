@@ -102,6 +102,14 @@
         function redirectToLink(link) {
             window.location.href = link;
         }
+
+        var ancho = window.innerWidth / 4;
+        window.onload = function() {
+            var imagenes = document.querySelectorAll('.ajustar-ancho');
+            imagenes.forEach(function(imagen) {
+                imagen.width = ancho;
+            });
+        };
     </script>    
 </head>
 <body>    
@@ -177,13 +185,13 @@
               </div>
         </div>
         <div class="bloque-left">
-            <img src="assets/Background3.png" alt="Imagen derecha" width="500px"/>
+            <img class="ajustar-ancho" src="assets/Background3.png" alt="Imagen derecha" fetchpriority="high"/>
         </div>
     </div>
     <div class="contenedor-bloques">
         <div class="bloque-right">
             <br><br><br><br>
-            <img src="assets/perfil.png" alt="Imagen izquierda" width="400px"/>
+            <img class="ajustar-ancho" src="assets/perfil.png" alt="Imagen izquierda" fetchpriority="high"/>
         </div>
         <div class="bloque-left" id="about">
             <h1><b>─── SOBRE MÍ ───</b></h1>
@@ -227,14 +235,14 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="assets/icc.jpg" alt="Imagen ICC" width="500px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="assets/icc.jpg" fetchpriority="high"/>
         </div>
     </div>
 
     <br><br><br><br><br>
 
     <div class="centrado">
-        <img src="assets/esquema.jpg" alt="Imagen Esquema" width="1000px"/>
+        <img src="assets/esquema.jpg" alt="Imagen Esquema" width="1000" sizes="100vw" fetchpriority="high"/>
     </div>
 
     <br><br><br><br><br><br>
@@ -247,9 +255,9 @@
             alt="Imagen 1" 
             onmouseover="cambiarImagenP1('entrar')"
             onmouseout="cambiarImagenP1('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/r6tracker.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
         &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -258,9 +266,9 @@
             alt="Imagen 2" 
             onmouseover="cambiarImagenP2('entrar')" 
             onmouseout="cambiarImagenP2('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/kubico3.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
         &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -269,9 +277,9 @@
             alt="Imagen 3" 
             onmouseover="cambiarImagenP3('entrar')" 
             onmouseout="cambiarImagenP3('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/keylogger.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
 
         <br><br>
@@ -281,9 +289,9 @@
             alt="Imagen 7" 
             onmouseover="cambiarImagenP7('entrar')" 
             onmouseout="cambiarImagenP7('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/cortafuegos.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
         &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -292,9 +300,9 @@
             alt="Imagen 8" 
             onmouseover="cambiarImagenP8('entrar')" 
             onmouseout="cambiarImagenP8('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/setup.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
         &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -303,9 +311,9 @@
             alt="Imagen 9" 
             onmouseover="cambiarImagenP9('entrar')" 
             onmouseout="cambiarImagenP9('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/smartHouse.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
 
         <br><br>
@@ -315,9 +323,9 @@
             alt="Imagen B" 
             onmouseover="cambiarImagenPB('entrar')" 
             onmouseout="cambiarImagenPB('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/ataqueNS3.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
         
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -327,9 +335,9 @@
             alt="Imagen A" 
             onmouseover="cambiarImagenPA('entrar')" 
             onmouseout="cambiarImagenPA('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/minijuegos.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
         &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -338,9 +346,9 @@
             alt="Imagen C" 
             onmouseover="cambiarImagenPC('entrar')" 
             onmouseout="cambiarImagenPC('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/portfolio.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
 
         <br><br>
@@ -350,9 +358,9 @@
             alt="Imagen 4" 
             onmouseover="cambiarImagenP4('entrar')"
             onmouseout="cambiarImagenP4('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/dragones&cavernas.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
         &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -361,9 +369,9 @@
             alt="Imagen 5" 
             onmouseover="cambiarImagenP5('entrar')" 
             onmouseout="cambiarImagenP5('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/myUPMclassRoom.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
         &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -372,9 +380,9 @@
             alt="Imagen 6" 
             onmouseover="cambiarImagenP6('entrar')" 
             onmouseout="cambiarImagenP6('salir')"              
-            style="width: 400px; height: 240px;"
+            width="400" height="240" sizes="100vw" fetchpriority="high"
             onclick="redirectToLink('./proyects/red-Empresarial.html')"
-            class="cambiar-cursor imagen-redondeada imagen-con-sombra" 
+            class="cambiar-cursor imagen-redondeada imagen-con-sombra" fetchpriority="high" 
         />
     </div>
 

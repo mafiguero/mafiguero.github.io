@@ -11,7 +11,13 @@
         if (window.innerWidth <= 768) {
             window.location.href = "mobile.html";
         }
-        
+        var ancho = window.innerWidth / 3;
+        window.onload = function() {
+            var imagenes = document.querySelectorAll('.ajustar-ancho');
+            imagenes.forEach(function(imagen) {
+                imagen.width = ancho;
+            });
+        };
         function cambiarImagenInicio(accion) {
             var imagen = document.getElementById("miImagenInicio");
             if (accion === 'entrar') { imagen.src = "../assets/inicio1.png"; } 
@@ -152,7 +158,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p6/p62.png" alt="Imagen p62" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p6/p62.png" alt="Imagen p62"/>
         </div>
     </div>
 
@@ -160,7 +166,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p6/p63.png" alt="Imagen p63" width="500px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p6/p63.png" alt="Imagen p63"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
@@ -201,7 +207,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p6/p64.png" alt="Imagen p64" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p6/p64.png" alt="Imagen p64"/>
         </div>
     </div>
 

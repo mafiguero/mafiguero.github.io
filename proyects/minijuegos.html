@@ -11,7 +11,13 @@
         if (window.innerWidth <= 768) {
             window.location.href = "mobile.html";
         }
-        
+        var ancho = window.innerWidth / 3;
+        window.onload = function() {
+            var imagenes = document.querySelectorAll('.ajustar-ancho');
+            imagenes.forEach(function(imagen) {
+                imagen.width = ancho;
+            });
+        };
         function cambiarImagenInicio(accion) {
             var imagen = document.getElementById("miImagenInicio");
             if (accion === 'entrar') { imagen.src = "../assets/inicio1.png"; } 
@@ -157,7 +163,7 @@
         </div>
         <div class="bloque-left">
             <br><br><br><br>
-            <img src="../assets/pA/pA3.png" alt="Imagen pA3" height="400px"/>
+            <img class=" ajustar-ancho" src="../assets/pA/pA3.png" alt="Imagen pA3"/>
         </div>
     </div>
 
@@ -166,7 +172,7 @@
     <div class="contenedor-bloques">
         <div class="bloque-right">
             <br><br>
-            <img src="../assets/pA/pA4.png" alt="Imagen pA4" width="500px"/>
+            <img class=" ajustar-ancho" src="../assets/pA/pA4.png" alt="Imagen pA4"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
@@ -202,7 +208,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA5.png" alt="Imagen pA5" height="250px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/pA/pA5.png" alt="Imagen pA5"/>
         </div>
     </div>
 
@@ -210,7 +216,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA6.png" alt="Imagen pA6" width="500px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/pA/pA6.png" alt="Imagen pA6"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
@@ -252,10 +258,9 @@
         </div>
         <div class="bloque-left">
             <img id="miImagenYt2"
-                class="imagen-redondeada imagen-con-sombra cambiar-cursor" 
+                class="imagen-redondeada imagen-con-sombra cambiar-cursor  ajustar-ancho" 
                 src="../assets/pA/pA8.png" 
-                alt="Imagen pA8" 
-                width="600px"
+                alt="Imagen pA8"
                 onmouseover="cambiarImagenYt2('entrar')"
                 onmouseout="cambiarImagenYt2('salir')"              
                 onclick="openLinkInNewTab('https://www.youtube.com/watch?v=no8lgSU2JQg')"
@@ -288,7 +293,7 @@
         </div>
         <div class="bloque-left">
             <br><br><br><br>
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA10.png" alt="Imagen pA10" height="400px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/pA/pA10.png" alt="Imagen pA10"/>
         </div>
     </div>
 
@@ -296,7 +301,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/pA/pA9.png" alt="Imagen pA9" width="500px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/pA/pA9.png" alt="Imagen pA9"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">

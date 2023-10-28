@@ -11,7 +11,13 @@
         if (window.innerWidth <= 768) {
             window.location.href = "mobile.html";
         }
-        
+        var ancho = window.innerWidth / 3;
+        window.onload = function() {
+            var imagenes = document.querySelectorAll('.ajustar-ancho');
+            imagenes.forEach(function(imagen) {
+                imagen.width = ancho;
+            });
+        };
         function cambiarImagenInicio(accion) {
             var imagen = document.getElementById("miImagenInicio");
             if (accion === 'entrar') { imagen.src = "../assets/inicio1.png"; } 
@@ -142,7 +148,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p1/p12.png" alt="Imagen r6tracker" height="400px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p1/p12.png" alt="Imagen r6tracker"/>
         </div>
     </div>
 
@@ -150,7 +156,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img src="../assets/p1/p13.png" alt="Imagen r6tracker-esquema" width="500px"/>
+            <img class=" ajustar-ancho" src="../assets/p1/p13.png" alt="Imagen r6tracker-esquema"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
@@ -185,14 +191,14 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p1/p14.png" alt="Imagen r6tracker" height="400px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p1/p14.png" alt="Imagen r6tracker"/>
         </div>
     </div>
 
     <br><br><br><br><br>
 
     <div class="centrado">
-        <img class="imagen-redondeada imagen-con-sombra" src="../assets/p1/p15.png" alt="Imagen r6tracker2" width="1000px"/>
+        <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p1/p15.png" alt="Imagen r6tracker2"/>
     </div>
 
     <br><br><br><br>

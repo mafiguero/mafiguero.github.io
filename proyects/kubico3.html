@@ -11,7 +11,13 @@
         if (window.innerWidth <= 768) {
             window.location.href = "mobile.html";
         }
-        
+        var ancho = window.innerWidth / 3;
+        window.onload = function() {
+            var imagenes = document.querySelectorAll('.ajustar-ancho');
+            imagenes.forEach(function(imagen) {
+                imagen.width = ancho;
+            });
+        };
         function cambiarImagenInicio(accion) {
             var imagen = document.getElementById("miImagenInicio");
             if (accion === 'entrar') { imagen.src = "../assets/inicio1.png"; } 
@@ -153,7 +159,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p2/p23.png" alt="Imagen p23" height="400px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p2/p23.png" alt="Imagen p23"/>
         </div>
     </div>
 
@@ -161,7 +167,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img src="../assets/p2/p24.png" alt="Imagen p24" width="600px"/>
+            <img class=" ajustar-ancho" src="../assets/p2/p24.png" alt="Imagen p24"/>
         </div>
         <div class="bloque-left" id="about">
             <h3><p><b>Este proyecto se divide en tres partes:</b></p></h3>
@@ -199,7 +205,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img src="../assets/p2/p25.png" alt="Imagen p25" height="250px"/>
+            <img class=" ajustar-ancho" src="../assets/p2/p25.png" alt="Imagen p25"/>
         </div>
     </div>
 
@@ -207,7 +213,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p2/p26.png" alt="Imagen p26" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p2/p26.png" alt="Imagen p26"/>
         </div>
         <div class="bloque-left">
             <h3><p><b>─── 2. ALGORITMO ───</b></p></h3>
@@ -244,7 +250,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p2/p27.png" alt="Imagen p27" height="500px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p2/p27.png" alt="Imagen p27"/>
         </div>
     </div>
 
@@ -253,18 +259,17 @@
     <div class="contenedor-bloques">
         <div class="bloque-right">
             <img id="miImagenYt"
-                class="imagen-redondeada imagen-con-sombra cambiar-cursor" 
+                class="imagen-redondeada imagen-con-sombra cambiar-cursor ajustar-ancho" 
                 src="../assets/p2/p210.png" 
                 alt="Imagen p210" 
-                width="600px"
                 onmouseover="cambiarImagenYt('entrar')"
                 onmouseout="cambiarImagenYt('salir')"              
                 onclick="openLinkInNewTab('https://www.youtube.com/watch?v=UdhPT543CFc&t=1s')"
             />
         </div>
         <div class="bloque-left" id="about">
+            <h3><p><b>─── 3. VISUALIZACIÓN ───</b></p></h3>
             <p class="texto-con-espaciado">
-                <h3><p><b>─── 3. VISUALIZACIÓN ───</b></p></h3>
                 Para finalizar, una vez se obtenemos los movimientos que se deben realizar para completar los distintos pasos del “Método 
                 de Principiantes”, se llamará a un programa que visualizará los pasos uno por uno mediante un Cubo Virtual 3D animado y 
                 que mostrará el paso correspondiente de dicho método que se está realizando en ese momento.

@@ -11,7 +11,13 @@
         if (window.innerWidth <= 768) {
             window.location.href = "mobile.html";
         }
-        
+        var ancho = window.innerWidth / 3;
+        window.onload = function() {
+            var imagenes = document.querySelectorAll('.ajustar-ancho');
+            imagenes.forEach(function(imagen) {
+                imagen.width = ancho;
+            });
+        };
         function cambiarImagenInicio(accion) {
             var imagen = document.getElementById("miImagenInicio");
             if (accion === 'entrar') { imagen.src = "../assets/inicio1.png"; } 
@@ -152,7 +158,7 @@
         </div>
         <div class="bloque-left">
             <br><br><br><br>
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p3/p33.png" alt="Imagen p33" height="350px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p3/p33.png" alt="Imagen p33"/>
         </div>
     </div>
 
@@ -160,7 +166,7 @@
 
     <div class="contenedor-bloques">
         <div class="bloque-right">
-            <img class="imagen-redondeada imagen-con-sombra" src="../assets/p3/p34.png" alt="Imagen p34" width="600px"/>
+            <img class="imagen-redondeada imagen-con-sombra ajustar-ancho" src="../assets/p3/p34.png" alt="Imagen p34"/>
         </div>
         <div class="bloque-left" id="about">
             <p class="texto-con-espaciado">
@@ -202,7 +208,7 @@
             </p>
         </div>
         <div class="bloque-left">
-            <img src="../assets/p3/p35.png" alt="Imagen p35" height="400px"/>
+            <img class=" ajustar-ancho" src="../assets/p3/p35.png" alt="Imagen p35"/>
         </div>
     </div>
 
@@ -235,7 +241,7 @@
 
     <div class="contenedor-bloques" id="carrera">
         <div class="bloque-right">
-            <img src="../assets/p3/p36.png" alt="Imagen p36" height="500px"/>
+            <img class=" ajustar-ancho" src="../assets/p3/p36.png" alt="Imagen p36"/>
         </div>
         <div class="bloque-left">
             <p class="texto-con-espaciado">
